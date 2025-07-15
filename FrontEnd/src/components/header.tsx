@@ -23,7 +23,7 @@ export function Header({ page }: HeaderProps) {
               <Link to="/">Home</Link>
             </h1>
             <h1 className="border-b-[1px] h-[52px] content-center border-[#6C6C6C]">
-              <Link to="/sobre">Sobre nós</Link>
+              <Link to="/Sobre">Sobre nós</Link>
             </h1>
             <h1 className="border-b-[1px] h-[52px] content-center border-[#6C6C6C]">
               <Link to="/Solucoes">Soluções</Link>
@@ -54,7 +54,7 @@ export function Header({ page }: HeaderProps) {
             ></div>
           </h1>
           <h1 className="group">
-            <Link to="/sobre">Sobre nós</Link>
+            <Link to="/Sobre">Sobre nós</Link>
             <div
               className={`h-[2px] w-[0%]  bg-blue-400 ${
                 page === "Sobrenos"
