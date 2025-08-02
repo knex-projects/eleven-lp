@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #131737;
+    --secondary-color: #0F0D19;
+    --text-color: #f0f0f0;
+    --text-second-color: #131737;
+    --text-sub-color: #6c6c6c;
+    --font-family: 'Roboto', sans-serif;
+    --font-family-heading: 'Poppins', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+}
