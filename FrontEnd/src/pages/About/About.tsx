@@ -1,10 +1,15 @@
-import { Header } from "../components/header";
+import Header from "../../components/layout/Header";
+import logo from "../../assets/images/eleven-big-logo.svg";
+import bgImg from "../../assets/images/bg-about-us.svg";
 
-export function Sobre() {
+export default function About() {
   return (
     <>
-      <section className="w-screen h-[870px] bg-[url(/sobreNosBG.svg)] bg-cover flex gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-[#F0F0F0] bg-center max-md:pt-0">
-        <Header page="Sobrenos" />
+      <section
+        className="w-screen h-[870px] bg-cover flex gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-[#F0F0F0] bg-center max-md:pt-0"
+        style={{ backgroundImage: `url(${bgImg})` }}
+      >
+        <Header page="about-us" />
         <div>
           <h1 className="text-[48px] font-bold  max-w-[493px] w-[86vw] max-sm:text-[32px] max-lg:text-[4.5vw] max-lg:pb-7">
             Prazer, somos a Eleven Consultoria!
@@ -34,7 +39,9 @@ export function Sobre() {
       </section>
       <section className="w-screen h-[563px] bg-[#F0F0F0] flex items-center max-md:justify-center  min-md:justify-evenly   max-lg:flex-col ">
         <div className=" ">
-          <h1 className="text-[#131737] text-[48px] max-sm:text-balance pb-10 font-bold w-[80vw] max-w-[441px] max-sm:pb-3  max-lg:max-w-[390px] max-lg:text-[32px]" >Nossa História</h1>
+          <h1 className="text-[#131737] text-[48px] max-sm:text-balance pb-10 font-bold w-[80vw] max-w-[441px] max-sm:pb-3  max-lg:max-w-[390px] max-lg:text-[32px]">
+            Nossa História
+          </h1>
           <h2 className="text-[#333333] flex  text-[24px] w-[80vw] max-[300px]:leading-[8vw] max-[160px]:leading-[9vw] max-w-[441px] max-sm:text-balance  font-normal max-md:max-w-[390px] max-md:pb-5 max-md:text-[16px] max-lg:text-[2.18vw]">
             Somos uma Empresa Júnior (EJ) vinculada ao Movimento Empresa Júnior,
             que surgiu da aspiração dos alunos de Relações Internacionais da
@@ -43,7 +50,10 @@ export function Sobre() {
             inserir pequenas e médias empresas no mercado internacional.
           </h2>
         </div>
-        <img src="/Logoc.svg" className="w-[525px] h-[188px] max-lg:w-[390px] max-lg:h-[139px] min-lg:order-first "></img>
+        <img
+          src={logo}
+          className="w-[525px] h-[188px] max-lg:w-[390px] max-lg:h-[139px] min-lg:order-first "
+        ></img>
       </section>
       <section className="h-[200px] bg-black"></section>
     </>

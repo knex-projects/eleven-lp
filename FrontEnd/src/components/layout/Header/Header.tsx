@@ -1,15 +1,17 @@
 import { MenuIcon } from "lucide-react";
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/images/eleven-logo.svg";
 
 type HeaderProps = {
   page: string;
 };
-export function Header({ page }: HeaderProps) {
+
+export default function Header({ page }: HeaderProps) {
   return (
-    <section className="w-screen h-[146px] backdrop-blur-lg bg-[#6C6C6C40]  fixed top-0 grid justify-items-center content-center  max-[760px]:h-[104px] ">
+    <section className="w-screen h-[146px] backdrop-blur-lg bg-[#6C6C6C40]  fixed top-0 grid justify-items-center content-center  max-[760px]:h-[104px]">
       <img
-        src="/Logo.svg"
+        src={logo}
         className="w-[100px] h-[100px]  max-[760px]:w-[72px]  max-[760px]:h-[72px]"
       ></img>
 
@@ -59,7 +61,7 @@ export function Header({ page }: HeaderProps) {
               className={`h-[2px] w-[0%]  bg-blue-400 ${
                 page === "Sobrenos"
                   ? " w-[100%]"
-                  : "animate-[growRightToLeft_1s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_1s_ease-in_forwards]"
+                  : "animate-[growRightToLeft_0.3s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]"
               }  group-hover:bg-white`}
             ></div>
           </h1>
@@ -69,7 +71,7 @@ export function Header({ page }: HeaderProps) {
               className={`h-[2px] w-[0%]  bg-blue-400 ${
                 page === "Soluções"
                   ? " w-[100%]"
-                  : "animate-[growRightToLeft_1s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_1s_ease-in_forwards]"
+                  : "animate-[growRightToLeft_0.3s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]"
               }  group-hover:bg-white`}
             ></div>
           </h1>
@@ -79,7 +81,7 @@ export function Header({ page }: HeaderProps) {
               className={`h-[2px] w-[0%]  bg-blue-400 ${
                 page === "Materiais"
                   ? " w-[100%]"
-                  : "animate-[growRightToLeft_1s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_1s_ease-in_forwards]"
+                  : "animate-[growRightToLeft_0.3s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]"
               }  group-hover:bg-white`}
             ></div>
           </h1>
@@ -89,7 +91,7 @@ export function Header({ page }: HeaderProps) {
               className={`h-[2px] w-[0%]  bg-blue-400 ${
                 page === "Cases"
                   ? " w-[100%]"
-                  : "animate-[growRightToLeft_1s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_1s_ease-in_forwards]"
+                  : "animate-[growRightToLeft_0.3s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]"
               }  group-hover:bg-white`}
             ></div>
           </h1>
@@ -99,7 +101,7 @@ export function Header({ page }: HeaderProps) {
               className={`h-[2px] w-[0%]  bg-blue-400 ${
                 page === "Blog"
                   ? " w-[100%]"
-                  : "animate-[growRightToLeft_1s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_1s_ease-in_forwards]"
+                  : "animate-[growRightToLeft_0.3s_ease-in-out_alternate]  group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]"
               }  group-hover:bg-white`}
             ></div>
           </h1>
