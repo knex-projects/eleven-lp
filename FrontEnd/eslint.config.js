@@ -45,7 +45,7 @@ export default tseslint.config(
             'react/jsx-filename-extension': [1, { extensions: ['.tsx'] }],
             'react-refresh/only-export-components': 'warn',
             '@typescript-eslint/no-unused-vars': [
-                'warn',
+                'error',
                 {
                     argsIgnorePattern: '^_',
                     varsIgnorePattern: '^_',
