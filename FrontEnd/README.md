@@ -25,14 +25,14 @@ Abra [http://localhost:5173](http://localhost:5173) (ou a porta indicada no seu 
 
 Utilizamos o Tailwind CSS para estilização utilitária.
 
--   **Arquivo de Configuração:** As configurações globais, como cores, animações e espaçamentos, estão em [`tailwind.config.js`](FrontEnd/tailwind.config.js).
--   **CSS Principal:** As diretivas base do Tailwind e as variáveis de CSS estão em [`src/index.css`](FrontEnd/src/index.css).
+- **Arquivo de Configuração:** As configurações globais, como cores, animações e espaçamentos, estão em [`tailwind.config.js`](FrontEnd/tailwind.config.js).
+- **CSS Principal:** As diretivas base do Tailwind e as variáveis de CSS estão em [`src/index.css`](FrontEnd/src/index.css).
 
 ### Zod (Validação de Dados)
 
 Usamos Zod para declarar e validar esquemas de dados, garantindo que os dados de formulários e APIs estejam corretos.
 
--   **Local dos Esquemas:** Todos os esquemas de validação devem ser criados no diretório `src/lib/`.
+- **Local dos Esquemas:** Todos os esquemas de validação devem ser criados no diretório `src/lib/`.
 
 **Como criar e usar um esquema:**
 
@@ -69,7 +69,7 @@ Usamos Zod para declarar e validar esquemas de dados, garantindo que os dados de
 
 Zustand é usado para gerenciar o estado global da aplicação de forma simples e centralizada.
 
--   **Local dos Stores:** Todos os stores devem ser criados no diretório [`src/store/`](FrontEnd/src/store/). Cada store deve ser focado em um domínio específico (ex: `use-contact-modal-store.ts`).
+- **Local dos Stores:** Todos os stores devem ser criados no diretório [`src/store/`](FrontEnd/src/store/). Cada store deve ser focado em um domínio específico (ex: `use-contact-modal-store.ts`).
 
 **Como criar e usar um store:**
 
@@ -106,3 +106,39 @@ Zustand é usado para gerenciar o estado global da aplicação de forma simples 
         );
     }
     ```
+
+### ESLint e Prettier (Qualidade e Formatação de Código)
+
+Este projeto está configurado com ESLint e Prettier para garantir um padrão de código consistente e de alta qualidade.
+
+- **ESLint**: Analisa o código para encontrar problemas, com base nas regras do Airbnb para TypeScript.
+- **Prettier**: Formata o código automaticamente para manter um estilo visual uniforme.
+
+**Comandos Disponíveis:**
+
+- **Verificar erros de lint:**
+    ```sh
+    npm run lint
+    ```
+- **Formatar todos os arquivos do projeto:**
+    ```sh
+    npm run format
+    ```
+
+**Integração com VS Code (Recomendado):**
+
+Para a melhor experiência, instale as seguintes extensões no VS Code:
+
+1.  [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+2.  [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+E adicione as seguintes configurações ao seu `settings.json` do VS Code para habilitar a formatação e correção automática ao salvar:
+
+```json
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    }
+}
+```

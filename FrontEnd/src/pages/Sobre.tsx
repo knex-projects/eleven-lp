@@ -3,10 +3,10 @@ import { Header } from '../components/header';
 export function Sobre() {
     return (
         <>
-            <section className="w-screen h-[870px] bg-[url(/sobreNosBG.svg)] bg-cover flex gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-[#F0F0F0] bg-center max-md:pt-0">
+            <section className="flex h-[870px] w-screen items-center justify-center gap-28 bg-[url(/sobreNosBG.svg)] bg-cover bg-center pt-20 text-[#F0F0F0] max-xl:gap-20 max-lg:flex-col max-md:pt-0">
                 <Header page="Sobrenos" />
                 <div>
-                    <h1 className="text-[48px] font-bold  max-w-[493px] w-[86vw] max-sm:text-[32px] max-lg:text-[4.5vw] max-lg:pb-7">
+                    <h1 className="w-[86vw] max-w-[493px] text-[48px] font-bold max-lg:pb-7 max-lg:text-[4.5vw] max-sm:text-[32px]">
                         Prazer, somos a Eleven Consultoria!
                     </h1>
                     {/* <iframe
@@ -17,7 +17,7 @@ export function Sobre() {
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                     /> */}
-                    <h2 className="text-[24px] font-normal  max-w-[481px] pt-10 text-[#CFCFCF] w-[88vw] max-lg:text-[2.5vw] max-sm:text-[16px] max-sm:pt-5">
+                    <h2 className="w-[88vw] max-w-[481px] pt-10 text-[24px] font-normal text-[#CFCFCF] max-lg:text-[2.5vw] max-sm:pt-5 max-sm:text-[16px]">
                         A Eleven oferece consultoria estratégica personalizada
                         para expandir sua empresa no mercado internacional e
                         fortalecer sua presença global.
@@ -25,19 +25,19 @@ export function Sobre() {
                 </div>
 
                 <iframe
-                    className="max-lg:hidden max-lg:absolute w-[552px] h-[294px] max-xl:w-[452px]"
+                    className="h-[294px] w-[552px] max-xl:w-[452px] max-lg:absolute max-lg:hidden"
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                     title="YouTube video"
                     allow="autoplay; encrypted-media"
                     allowFullScreen
                 />
             </section>
-            <section className="w-screen h-[563px] bg-[#F0F0F0] flex items-center justify-center md:justify-evenly flex-col lg:flex-row-reverse ">
+            <section className="flex h-[563px] w-screen flex-col items-center justify-center bg-[#F0F0F0] md:justify-evenly lg:flex-row-reverse">
                 <div className=" ">
-                    <h1 className="text-[#131737] text-[48px] max-sm:text-balance pb-10 font-bold w-[80vw] max-w-[441px] max-sm:pb-3  max-lg:max-w-[390px] max-lg:text-[32px]">
+                    <h1 className="w-[80vw] max-w-[441px] pb-10 text-[48px] font-bold text-[#131737] max-lg:max-w-[390px] max-lg:text-[32px] max-sm:text-balance max-sm:pb-3">
                         Nossa História
                     </h1>
-                    <h2 className="text-[#333333] flex  text-[24px] w-[80vw] max-[300px]:leading-[8vw] max-[160px]:leading-[9vw] max-w-[441px] max-sm:text-balance  font-normal max-md:max-w-[390px] max-md:pb-5 max-md:text-[16px] max-lg:text-[2.18vw]">
+                    <h2 className="flex w-[80vw] max-w-[441px] text-[24px] font-normal text-[#333333] max-lg:text-[2.18vw] max-md:max-w-[390px] max-md:pb-5 max-md:text-[16px] max-sm:text-balance max-[300px]:leading-[8vw] max-[160px]:leading-[9vw]">
                         Somos uma Empresa Júnior (EJ) vinculada ao Movimento
                         Empresa Júnior, que surgiu da aspiração dos alunos de
                         Relações Internacionais da UEPB em colocar em prática a
@@ -49,7 +49,8 @@ export function Sobre() {
                 </div>
                 <img
                     src="/Logoc.svg"
-                    className="w-[525px] h-[188px] max-lg:w-[390px] max-lg:h-[139px] min-lg:order-first "></img>
+                    className="min-lg:order-first h-[188px] w-[525px] max-lg:h-[139px] max-lg:w-[390px]"
+                ></img>
             </section>
             <section className="h-[200px] bg-black"></section>
         </>

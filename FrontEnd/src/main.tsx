@@ -5,7 +5,7 @@ import App from './App.tsx';
 import { useCounterStore } from './store/use-counter-store.ts';
 
 // Usando o 'subscribe' para ouvir mudanças de estado fora de componentes. Bom para analytics ou localStorage
-const unsubscribe = useCounterStore.subscribe((state) =>
+const _unsubscribe = useCounterStore.subscribe((state) =>
     console.log('O contador mudou para: ', state.count)
 );
 
