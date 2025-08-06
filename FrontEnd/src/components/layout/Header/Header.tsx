@@ -1,4 +1,4 @@
-import { MenuIcon } from "lucide-react";
+import { IoMenuSharp } from "react-icons/io5";
 import { Popover, PopoverContent, PopoverTrigger } from "../../ui/popover";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/images/eleven-logo.svg";
@@ -17,7 +17,7 @@ export default function Header({ page }: HeaderProps) {
 
       <Popover>
         <PopoverTrigger className=" absolute right-5 top-7 pb-6 min-md:hidden">
-          <MenuIcon color="#FFFFFF" size={48} />
+          <IoMenuSharp color="#FFFFFF" size={48} />
         </PopoverTrigger>
         <PopoverContent className="w-[100vw] min-[761px]:hidden backdrop-blur-lg bg-[#6C6C6C40] border-b-[1px] border-t-[1px] border-[#6C6C6C] border-l-0 border-r-0 rounded-none text-[#FFFFFF] text-center  grid text-[24px] animate- p-0">
           <nav>
