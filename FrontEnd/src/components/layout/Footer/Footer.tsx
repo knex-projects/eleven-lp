@@ -15,7 +15,7 @@ export default function Footer() {
       <ul className="min-w-50 m-2.5 flex-auto">
         <h1 className="text-white mb-2.5">Fale conosco</h1>
         <li><Link to={"https://wa.me/5521975922237"}>+55 (21) 97592-2237</Link></li>
-        <li><Link to={"ElevenJr.com.br"}>ElevenJr.com.br</Link></li>
+        <li><Link to={"/"}>ElevenJr.com.br</Link></li>
         <li><Link to={"mailto:vendas.elevenjr@gmail.com"}>vendas.elevenjr@gmail.com</Link></li>
       </ul>
 
