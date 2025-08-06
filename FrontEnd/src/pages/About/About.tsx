@@ -1,15 +1,16 @@
 import Header from "../../components/layout/Header";
 import logo from "../../assets/images/eleven-big-logo.svg";
 import bgImg from "../../assets/images/bg-about-us.svg";
+import Footer from "../../components/layout/Footer/footer";
 
 export default function About() {
   return (
     <>
+      <Header page="about-us" />
       <section
         className="w-screen h-[870px] bg-cover flex gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-[#F0F0F0] bg-center max-md:pt-0"
         style={{ backgroundImage: `url(${bgImg})` }}
       >
-        <Header page="about-us" />
         <div>
           <h1 className="text-[48px] font-bold  max-w-[493px] w-[86vw] max-sm:text-[32px] max-lg:text-[4.5vw] max-lg:pb-7">
             Prazer, somos a Eleven Consultoria!
@@ -56,6 +57,7 @@ export default function About() {
         ></img>
       </section>
       <section className="h-[200px] bg-black"></section>
+      <Footer/>
     </>
   );
 }

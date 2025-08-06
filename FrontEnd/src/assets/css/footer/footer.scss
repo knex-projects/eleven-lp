@@ -1,0 +1,41 @@
+.footer-social-medias {
+	margin: 15px 5px 25px 5px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+
+	.logo-with-name {
+		margin-right: 15px;
+		font-size: large;
+		display: flex;
+		align-items: center;
+		img {
+			width: 70px;
+			height: 70px;
+			margin-right: 3px;
+		}
+	}
+
+	.social-medias {
+		display: flex;
+		.media-icon {
+			font-size: 1.7em;
+			color: var(--muted-foreground);
+			transition: .5s;
+			&:hover {
+				transition: .5s;
+				color: white !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 512px) {
+    .logo-with-name h1 {
+		display: none;
+	}
+
+	.media-icon {
+		color: white !important;
+	}
+}
