@@ -53,7 +53,7 @@ export default function PartnersCarousel() {
                     {displayPartners.map((partner, index) => (
                         <CarouselItem
                             key={`${partner.alt}-${index}`}
-                            className="md:basis-1/2 lg:basis-1/3 pl-16 flex justify-center items-center"
+                            className="md:basis-1/2 lg:basis-1/3 pl-16 flex justify-center items-center py-4"
                         >
                             <PartnerLogo src={partner.src} alt={partner.alt} />
                         </CarouselItem>
