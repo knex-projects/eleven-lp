@@ -1,15 +1,17 @@
-import CustomerJorney from "../../components/CustomerJorney";
-import HeroSection from "../../components/HeroSection";
-import Header from "../../components/layout/Header";
-import Footer from "../../components/layout/Footer/footer";
+import CustomerJorney from '../../components/CustomerJorney';
+import HeroSection from '../../components/HeroSection';
+import PartnersCarousel from '../../components/PartnersCarousel';
+import Header from '../../components/layout/Header';
+import Footer from '../../components/layout/Footer';
 
 export default function Home() {
-  return (
-    <>
-      <Header page="Home" />
-      <HeroSection />
-      <CustomerJorney />
-      <Footer/>
-    </>
-  );
+    return (
+        <>
+            <Header page="Home" />
+            <HeroSection />
+            <CustomerJorney />
+            <PartnersCarousel />
+            <Footer />
+        </>
+    );
 }
