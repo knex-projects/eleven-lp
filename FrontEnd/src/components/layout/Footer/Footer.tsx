@@ -8,8 +8,8 @@ import "../../../assets/css/footer/footer.css";
 
 export default function Footer() {
   return (
-    <footer className="text-white px-48 pt-24 bg-footer-background">
-      <div className="flex flex-wrap flex-col lg:flex-row text-muted-foreground items-start">
+    <footer className="text-white lg:px-48 px-12 pt-24 bg-footer-background h-full">
+      <div className="flex flex-wrap flex-col sm:flex-row text-muted-foreground items-start justify-center">
         <ul className="min-w-50 m-2.5 flex-auto">
           <h1 className="text-white mb-2.5 text-[1.125rem]">Fale conosco</h1>
           <li>
@@ -84,7 +84,7 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <hr className="mt-10 opacity-50" />
+      <hr className="mt-10 opacity-50 " />
 
       <div className="footer-social-medias py-6 gap-5 flex flex-col lg:flex-row items-center justify-between">
         <Link to={"/"} className="logo-with-name">
@@ -118,7 +118,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <h2 className="text-muted-foreground text-center mt-5">
+      <h2 className="sm:text-[1rem] text-muted-foreground text-center mt-5 text-[0.875rem]">
         © 2017-{new Date().getFullYear()} Eleven Consultoria Jr. Todos os
         direitos reservados.
       </h2>
