@@ -1,8 +1,9 @@
-import CustomerJorney from '../../components/CustomerJorney';
-import HeroSection from '../../components/HeroSection';
-import PartnersCarousel from '../../components/PartnersCarousel';
-import Header from '../../components/layout/Header';
-import Footer from '../../components/layout/Footer';
+import CustomerJorney from '@/components/CustomerJorney';
+import HeroSection from '@/components/HeroSection';
+import PartnersCarousel from '@/components/PartnersCarousel';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import ConsultForm from '@/components/ConsultForm';
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <HeroSection />
             <CustomerJorney />
             <PartnersCarousel />
+            <ConsultForm/>
             <Footer />
         </>
     );
