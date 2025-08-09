@@ -79,7 +79,7 @@ export default function CustomerJourney() {
             <h2 className="text-2xl font-medium mb-4 text-center">
               {step.title}
             </h2>
-            <p className="text-lg text-center text-[#CFCFCF]">
+            <p className="text-lg text-[#CFCFCF] text-justify">
               {step.description}
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function CustomerJourney() {
                 <h2 className="text-2xl font-medium mb-4 text-center">
                   {step.title}
                 </h2>
-                <p className="text-lg text-center text-[#CFCFCF]">
+                <p className="text-lg text-[#CFCFCF] text-justify">
                   {step.description}
                 </p>
               </CarouselItem>
