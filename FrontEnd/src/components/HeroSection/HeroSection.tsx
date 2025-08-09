@@ -1,9 +1,11 @@
-import bgImg from "../../assets/images/bg-hero-section.svg";
+import bgImg from "../../assets/images/bg-hero-section.png";
 
 export default function HeroSection() {
   return (
-      <section className="w-full h-[872px] bg-cover justify-center flex flex-col items-center  text-center content-center max-sm:bg-center"
-      style={{ backgroundImage: `url(${bgImg})` }}>
+      <section className="w-full h-[872px] justify-center flex flex-col items-center text-center content-center bg-cover"
+      style={{ backgroundImage: `url(${bgImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center" }}>
         <h1 className="text-[24px] font-medium text-center text-[#F0F0F0] max-md:text-[16px] min-md:pt-48 max-md:font-normal mb-12">
           ELEVEN CONSULTORIA
         </h1>
