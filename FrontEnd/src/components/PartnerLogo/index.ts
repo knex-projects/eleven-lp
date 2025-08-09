@@ -1,1 +1,1 @@
-import {default} from './PartnerLogo';
+export { default } from './PartnerLogo';
