@@ -9,7 +9,7 @@ type HeaderProps = {
 
 export default function Header({ page }: HeaderProps) {
   return (
-    <section className="w-screen h-[146px] backdrop-blur-lg bg-[#6C6C6C40]  fixed top-0 grid justify-items-center content-center  max-[760px]:h-[104px]">
+    <section className="z-[1000] w-screen h-[146px] backdrop-blur-lg bg-[#6C6C6C40]  fixed top-0 grid justify-items-center content-center  max-[760px]:h-[104px]">
       <img
         src={logo}
         className="w-[100px] h-[100px]  max-[760px]:w-[72px]  max-[760px]:h-[72px]"
