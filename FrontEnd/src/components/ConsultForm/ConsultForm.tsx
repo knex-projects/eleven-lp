@@ -1,7 +1,7 @@
+import { useState } from "react";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { toast } from "sonner";
 import {
   Form,
   FormControl,
@@ -13,20 +13,21 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import axios from "axios";
 
 import ElevenLogo from "@/assets/images/eleven-logo-form.svg";
 import ContactIcon from "@/assets/images/contact-icon.svg";
 
 const formSchema = z.object({
-  enterprise: z
+  empresa: z
     .string()
     .min(1, "O nome da empresa é obrigatório")
     .max(50, "O nome da empresa deve ter no máximo 50 caracteres"),
 
-  representant: z
+  representante: z
     .string()
-    .min(1, "O nome do representante é obrigatório")
-    .max(50, "O nome do representante deve ter no máximo 50 caracteres")
+    .min(1, "O nome do representantee é obrigatório")
+    .max(50, "O nome do representantee deve ter no máximo 50 caracteres")
     .regex(
       /^[a-zA-ZÀ-ÿ\u00f1\u00d1\s'-]+$/,
       "O nome deve conter apenas letras"
@@ -38,7 +39,7 @@ const formSchema = z.object({
     .email("Por favor, insira um email válido")
     .max(50, "O email deve ter no máximo 50 caracteres"),
 
-  phoneNumber: z
+  telefone: z
     .string()
     .min(1, "O telefone é obrigatório")
     .regex(
@@ -48,41 +49,63 @@ const formSchema = z.object({
     .min(10, "O telefone deve ter pelo menos 10 dígitos")
     .max(20, "O telefone deve ter no máximo 20 caracteres"),
 
-  message: z
+  mensagem: z
     .string()
     .min(1, "A mensagem é obrigatória")
     .max(1000, "A mensagem deve ter no máximo 1000 caracteres"),
 });
 
 export default function ConsultForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      enterprise: "",
-      representant: "",
+      empresa: "",
+      representante: "",
       email: "",
-      phoneNumber: "",
-      message: "",
+      telefone: "",
+      mensagem: "",
     },
   });
 
-  function onSubmit(data: z.infer<typeof formSchema>) {
-    toast.success("Formulário enviado com sucesso!", {
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-neutral-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    });
+  async function onSubmit(data: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
 
-    // Aqui você pode adicionar a lógica para enviar os dados para seu backend
-    console.log("Dados do formulário:", data);
+    try {
+      const response = await axios.post(
+        "https://formsubmit.co/annielyms.knex@gmail.com", // Alterar email pra não ser o meu.
+        {
+          ...data,
+          _subject: "Novo contato do site Eleven",
+          _template: "table",
+          _captcha: "false",
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        }
+      );
+
+      if (response.status === 200) {
+        console.log("Sucesso ao enviar.");
+        setSubmitted(true);
+        form.reset();
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 5000);
+      }
+    } catch (error) {
+      console.error("Erro ao enviar:", error);
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
     <section className="w-full lg:p-24 p-6 py-16 bg-[#0F143B] flex flex-row justify-around">
-      
-      {/* Lado esquerdo com texto e imagem */}
       <div className="max-w-1/2 max-h-full flex-col lg:flex hidden pr-2 gap-y-8 justify-evenly">
         <span className="flex flex-col gap-y-8">
           <h1 className="text-5xl font-bold text-[#F0F0F0] mb-4">
@@ -120,7 +143,7 @@ export default function ConsultForm() {
             {/* Campo Empresa */}
             <FormField
               control={form.control}
-              name="enterprise"
+              name="empresa"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Empresa</FormLabel>
@@ -132,10 +155,10 @@ export default function ConsultForm() {
               )}
             />
 
-            {/* Campo Representante */}
+            {/* Campo representante */}
             <FormField
               control={form.control}
-              name="representant"
+              name="representante"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Representante</FormLabel>
@@ -165,7 +188,7 @@ export default function ConsultForm() {
             {/* Campo Telefone */}
             <FormField
               control={form.control}
-              name="phoneNumber"
+              name="telefone"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Telefone</FormLabel>
@@ -180,7 +203,7 @@ export default function ConsultForm() {
             {/* Campo Mensagem */}
             <FormField
               control={form.control}
-              name="message"
+              name="mensagem"
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Mensagem</FormLabel>
@@ -196,7 +219,12 @@ export default function ConsultForm() {
               )}
             />
 
-            <Button type="submit">Fale com um Consultor</Button>
+            <Button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Enviando..." : "Fale com um Consultor"}
+            </Button>
+            <FormMessage className={submitted ? `block` : `hidden`}>
+              Enviado com sucesso!
+            </FormMessage>
           </form>
         </Form>
       </div>
