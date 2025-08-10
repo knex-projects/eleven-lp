@@ -13,6 +13,15 @@ svg" alt="Eleven logo">
 ## Sobre 
 Redesenho da plataforma digital (https://elevenjr.com/). Com foco em modernização visual, clareza na comunicação e melhor experiência do usuário, mantendo todas as informações essenciais.
 
+## Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+
+[Node.js](https://nodejs.org/en) (v18+ recomendado)
+
+[npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
+
+[Git](https://git-scm.com/downloads)
+
 ## Instalação
 
 1. Clone o repositório:
@@ -29,6 +38,20 @@ npm install
 npm run dev
 ```
 O aplicativo estará disponível em http://localhost:5173
+
+## Tecnologias, Bibliotecas e Frameworks
+- React (v19.1.0) - Biblioteca JavaScript para construção de interfaces de usuário.
+- Vite (v7.0.3) - Ferramenta de build rápida para desenvolvimento frontend.
+- Tailwind CSS (v4.1.11) - Framework CSS utilitário para estilização.
+
+- TypeScript (~5.8.3) - Superset tipado de JavaScript.
+
+- ESLint (v9.30.1) - Linter para JavaScript/TypeScript.
+
+- React Hook Form (v7.62.0) - Biblioteca para gerenciamento de formulários.
+
+- Zod (v4.0.16) - Biblioteca de validação de esquemas TypeScript-first.
+- Shadui/cn - Biblioteca de componentes pré-prontos.
 
 ## Componentes
 
