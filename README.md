@@ -1,6 +1,5 @@
 <h1 align="center">
-<img src="./FrontEnd/src/assets/images/eleven-logo-form.
-svg" alt="Eleven logo">
+<img src="./FrontEnd/src/assets/images/eleven-logo-form.svg" alt="Eleven logo">
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)
@@ -9,6 +8,7 @@ svg" alt="Eleven logo">
 ![Zod](https://img.shields.io/badge/zod-%233068b7.svg?style=for-the-badge&logo=zod&logoColor=white)
 ![Axios](https://img.shields.io/badge/Axios-5A29E4.svg?style=for-the-badge&logo=Axios&logoColor=white)
 ![Shadcn/ui](https://img.shields.io/badge/shadcn/ui-000000.svg?style=for-the-badge&logo=shadcn/ui&logoColor=white)
+</h1>
 
 ## Sobre 
 Redesenho da plataforma digital (https://elevenjr.com/). Com foco em modernização visual, clareza na comunicação e melhor experiência do usuário, mantendo todas as informações essenciais.
