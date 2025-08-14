@@ -3,12 +3,12 @@ import {
     CarouselContent,
     CarouselItem,
 } from '@/components/ui/carousel';
-import PartnerLogo from '../PartnerLogo/PartnerLogo';
+import PartnerLogo from '../PartnerLogo';
 import Autoplay from 'embla-carousel-autoplay';
 
-import probexComexLogo from '../../assets/images/partner1-PROBEXCOMEX.svg';
-import prefeituraJpLogo from '../../assets/images/partner2-PREFEITURAJP.svg';
-import aiesecLogo from '../../assets/images/partner3-AIESEC.svg';
+import probexComexLogo from '@/assets/images/partner1-PROBEXCOMEX.svg';
+import prefeituraJpLogo from '@/assets/images/partner2-PREFEITURAJP.svg';
+import aiesecLogo from '@/assets/images/partner3-AIESEC.svg';
 
 const partners = [
     { src: probexComexLogo, alt: 'PROBEX COMEX UFPB' },
