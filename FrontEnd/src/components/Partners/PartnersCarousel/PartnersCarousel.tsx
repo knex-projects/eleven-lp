@@ -6,9 +6,9 @@ import {
 import PartnerLogo from '../PartnerLogo';
 import Autoplay from 'embla-carousel-autoplay';
 
-import probexComexLogo from '@/assets/images/partner1-PROBEXCOMEX.svg';
-import prefeituraJpLogo from '@/assets/images/partner2-PREFEITURAJP.svg';
-import aiesecLogo from '@/assets/images/partner3-AIESEC.svg';
+import probexComexLogo from '@/assets/images/partners/partner1-PROBEXCOMEX.svg';
+import prefeituraJpLogo from '@/assets/images/partners/partner2-PREFEITURAJP.svg';
+import aiesecLogo from '@/assets/images/partners/partner3-AIESEC.svg';
 
 const partners = [
     { src: probexComexLogo, alt: 'PROBEX COMEX UFPB' },
@@ -33,7 +33,7 @@ export default function PartnersCarousel() {
         partners.length < 7 ? [...partners, ...partners] : partners;
 
     return (
-        <section className="w-full h-auto bg-white text-black flex justify-center items-center flex-col py-32">
+        <section className="w-full h-auto bg-background text-dark-text flex justify-center items-center flex-col py-32">
             <h1 className="text-4xl font-bold text-center mb-16">
                 Empresas com quem já colaboramos
             </h1>

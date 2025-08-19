@@ -15,8 +15,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
 
-import ElevenLogo from "@/assets/images/eleven-logo-form.svg";
-import ContactIcon from "@/assets/images/contact-icon.svg";
+import ElevenLogo from "@/assets/images/logos/eleven-logo-form.svg";
+import ContactIcon from "@/assets/images/icons/contact-icon.svg";
 
 const formSchema = z.object({
   empresa: z
@@ -105,13 +105,13 @@ export default function ConsultForm() {
   }
 
   return (
-    <section className="w-full lg:p-24 p-6 py-16 bg-[#0F143B] flex flex-row justify-around">
+    <section className="w-full lg:p-24 p-6 py-16 bg-dark-background flex flex-row justify-around">
       <div className="max-w-1/2 max-h-full flex-col lg:flex hidden pr-2 gap-y-8 justify-evenly">
         <span className="flex flex-col gap-y-8">
-          <h1 className="text-5xl font-bold text-[#F0F0F0] mb-4">
+          <h1 className="text-5xl font-bold text-subtext mb-4">
             Internacionalize sua empresa.
           </h1>
-          <p className="text-white text-2xl font-roboto mb-8">
+          <p className="text-primary-text text-2xl font-roboto mb-8">
             Está pronto para levar seu negócio além das fronteiras? Preencha o
             formulário ao lado que expandiremos o horizonte do seu negócio.
           </p>
@@ -134,7 +134,7 @@ export default function ConsultForm() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="bg-white px-8 py-10 rounded-lg space-y-6 max-w-[512px]"
+            className="bg-background text-dark-text px-8 py-10 rounded-lg space-y-6 max-w-[512px]"
           >
             <h1 className="font-bold text-2xl text-center w-full p-0">
               Agende uma conversa!
