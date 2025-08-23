@@ -4,15 +4,17 @@ import PartnersCarousel from '@/components/Partnes/PartnersCarousel';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ConsultForm from '@/components/ConsultForm';
+import ServicesSection from '@/components/Services/ServicesSection';
 
 export default function Home() {
     return (
         <>
             <Header page="Home" />
             <HeroSection />
+            <ServicesSection />
             <CustomerJorney />
             <PartnersCarousel />
-            <ConsultForm/>
+            <ConsultForm />
             <Footer />
         </>
     );
