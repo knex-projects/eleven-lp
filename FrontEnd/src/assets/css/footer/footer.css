@@ -27,3 +27,12 @@
   transition: 0.5s;
   color: white !important;
 }
+
+@media screen and (max-width: 512px) {
+  .logo-with-name h1 {
+    display: none;
+  }
+  .media-icon {
+    color: white !important;
+  }
+}/*# sourceMappingURL=footer.css.map */

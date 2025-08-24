@@ -3,15 +3,15 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaSquareXTwitter } from "react-icons/fa6"; //Ainda não tem o logo X no Io5
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/eleven-logo.svg";
-import "../../../assets/css/footer/footer.css";
+import logo from "@/assets/images/logos/eleven-logo.svg";
+import "@/assets/css/footer/footer.css";
 
 export default function Footer() {
   return (
-    <footer className="text-white lg:px-48 px-12 pt-24 bg-footer-background h-full">
-      <div className="flex flex-wrap flex-col sm:flex-row text-muted-foreground items-start justify-center">
+    <footer className="text-primary-text lg:px-48 px-12 pt-24 bg-footer-background h-full">
+      <div className="flex flex-wrap flex-col sm:flex-row text-muted-subtext items-start justify-center">
         <ul className="min-w-50 m-2.5 flex-auto">
-          <h1 className="text-white mb-2.5 text-[1.125rem]">Fale conosco</h1>
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Fale conosco</h1>
           <li>
             <Link to={"https://wa.me/5521975922237"}>+55 (21) 97592-2237</Link>
           </li>
@@ -26,7 +26,7 @@ export default function Footer() {
         </ul>
 
         <ul className="min-w-50 m-2.5 flex-auto pb-5">
-          <h1 className="text-white mb-2.5 text-[1.125rem]">
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
             Materiais Gratuitos
           </h1>
           <li>
@@ -50,7 +50,7 @@ export default function Footer() {
         </ul>
 
         <ul className="min-w-50 m-2.5 flex-auto">
-          <h1 className="text-white mb-2.5 text-[1.125rem]">
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
             Nossa localização
           </h1>
           <li>
@@ -62,7 +62,7 @@ export default function Footer() {
         </ul>
 
         <ul className="min-w-50 m-2.5 flex-auto">
-          <h1 className="text-white mb-2.5 text-[1.125rem]">Parceiros</h1>
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Parceiros</h1>
           <li>
             <Link to={"https://elevenjr.com/parceiros"}>
               Venha ser um Parceiro
@@ -71,14 +71,14 @@ export default function Footer() {
         </ul>
 
         <ul className="min-w-50 m-2.5 flex-auto">
-          <h1 className="text-white mb-2.5 text-[1.125rem]">Blog</h1>
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Blog</h1>
           <li>
             <Link to={"https://elevenjr.com/blog"}>Conheça nosso Blog</Link>
           </li>
         </ul>
 
         <ul className="min-w-50 m-2.5 flex-auto">
-          <h1 className="text-white mb-2.5 text-[1.125rem]">Cases</h1>
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Cases</h1>
           <li>
             <Link to={"https://elevenjr.com/cases"}>Veja nossos cases</Link>
           </li>
@@ -118,7 +118,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <h2 className="sm:text-[1rem] text-muted-foreground text-center mt-5 text-[0.875rem]">
+      <h2 className="sm:text-[1rem] text-muted-subtext text-center mt-5 text-[0.875rem]">
         © 2017-{new Date().getFullYear()} Eleven Consultoria Jr. Todos os
         direitos reservados.
       </h2>

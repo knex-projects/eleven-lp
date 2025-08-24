@@ -1,15 +1,12 @@
 "use client"
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  type CarouselApi,
-} from "@/components/ui/carousel";
-import numberOne from "../../assets/images/1.svg";
-import numberTwo from "../../assets/images/2.svg";
-import numberThree from "../../assets/images/3.svg";
 import { useState, useEffect } from "react";
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
+
+import numberOne from "@/assets/images/icons/1.svg";
+import numberTwo from "@/assets/images/icons/2.svg";
+import numberThree from "@/assets/images/icons/3.svg";
+
 
 interface Step {
   src: string;
@@ -44,22 +41,25 @@ export default function CustomerJourney() {
 
   useEffect(() => {
     if (!api) return;
-    setCurrent(api.selectedScrollSnap());
-
-    api.on("select", () => {
+    
+    const handleSelect = () => {
       setCurrent(api.selectedScrollSnap());
-    });
+    };
 
-    return () => { api.off("select")
+    setCurrent(api.selectedScrollSnap());
+    api.on("select", handleSelect);
+
+    return () => {
+      api.off("select", handleSelect);
     };
   }, [api]);
 
   return (
-    <section className="w-full h-auto bg-[#131737] text-white flex flex-col items-center px-6 sm:py-56 py-32">
+    <section className="w-full h-auto bg-dark-background text-primary-text flex flex-col items-center px-6 sm:py-56 py-32">
       <h1 className="sm:text-5xl text-[2rem] font-bold text-center">
         Jornada do Cliente
       </h1>
-      <p className="sm:text-2xl text-[1rem] py-2 text-center text-[#CFCFCF]">
+      <p className="sm:text-2xl text-[1rem] py-2 text-center text-subtext">
         Entenda como funciona nosso processo
       </p>
 
@@ -79,7 +79,7 @@ export default function CustomerJourney() {
             <h2 className="text-2xl font-medium mb-4 text-center">
               {step.title}
             </h2>
-            <p className="text-lg text-[#CFCFCF] text-justify">
+            <p className="text-lg text-subtext text-justify">
               {step.description}
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function CustomerJourney() {
                 <h2 className="text-2xl font-medium mb-4 text-center">
                   {step.title}
                 </h2>
-                <p className="text-lg text-[#CFCFCF] text-justify">
+                <p className="text-lg text-subtext text-justify">
                   {step.description}
                 </p>
               </CarouselItem>
