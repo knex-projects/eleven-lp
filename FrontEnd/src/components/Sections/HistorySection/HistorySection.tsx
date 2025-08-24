@@ -14,7 +14,7 @@ export default function HistorySection() {
         <h1 className="text-dark-text text-[45px] pb-5 font-bold w-[80vw] max-w-[440px] max-lg:text-[30px] max-lg:text-center">
           Nossa História
         </h1>
-        <h2 className="text-dark-text text-[20px] max-w-[440px] max-lg:text-center">
+        <h2 className="text-dark-text text-[20px] max-w-[440px] max-lg:text-center text-justify">
           Somos uma Empresa Júnior (EJ) vinculada ao Movimento Empresa Júnior,
           que surgiu da aspiração dos alunos de Relações Internacionais da
           UEPB em colocar em prática a teoria aprendida no curso e oferecer
