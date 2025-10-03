@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="./FrontEnd/src/assets/images/eleven-logo-form.svg" alt="Eleven logo">
+<img src="./FrontEnd/src/assets/images/logos/eleven-logo-form.svg" alt="Eleven logo">
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)

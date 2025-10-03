@@ -10,6 +10,8 @@ type HeaderProps = {
 };
 
 export default function Header({ page }: HeaderProps) {
+
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
