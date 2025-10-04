@@ -49,11 +49,11 @@ const DepoinmentSection: React.FC = () => {
                >
                 <div className="max-w-72">
                   <div className="bg-[#070920] rounded-lg p-6 relative">
-                    <div className="text-white text-lg leading-relaxed">
-                      <span className="text-2xl text-white/80">"</span>
-                      {testimonial.text}
-                      <span className="text-2xl text-white/80">"</span>
-                    </div>
+                     <div className="text-[#898989] text-lg font-roboto">
+                       <span className="text-2xl text-white italic">"{" "}</span>
+                        {testimonial.text}
+                       <span className="text-2xl text-white italic">{" "}"</span>
+                     </div>
                     <div
                       className={`absolute w-0 h-0 ${
                         index % 2 === 0
