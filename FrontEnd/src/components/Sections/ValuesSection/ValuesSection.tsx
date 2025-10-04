@@ -34,7 +34,7 @@ export default function ValuesSection() {
   ];
 
   return (
-    <section className="w-screen min-h-[800px] flex flex-col items-center justify-center gap-10 bg-white px-8 py-16">
+    <section className="w-screen min-h-[680px] flex flex-col items-center justify-center gap-10 bg-white">
       <h1 className="text-5xl font-bold text-[#0F143B] text-center mb-8">Nossos valores</h1>
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
         {values.map((value, index) => (

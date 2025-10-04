@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Solucoes from './pages/Solucoes';
+import Solutions from './pages/Solutions';
 import { FullscreenLoading } from '@/components/ui/loading';
 import { useLoading } from '@/hooks/useLoading';
 
@@ -17,7 +17,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Sobre" element={<About />} />
-                <Route path="/Solucoes" element={<Solucoes />} />
+                <Route path="/Solucoes" element={<Solutions />} />
             </Routes>
         </BrowserRouter>
     );

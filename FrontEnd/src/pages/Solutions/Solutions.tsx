@@ -1,7 +1,5 @@
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-
-import AboutSection from '@/components/Sections/AboutSection';
 import SolutionsSection from '@/components/Sections/SolutionsSection';
 
 export default function Solucoes() {
@@ -10,7 +8,9 @@ export default function Solucoes() {
             <Header page="solucoes" />
 
             {/* PLACEHOLDER */}
-            <AboutSection />
+            <div className="h-[50vh] w-full bg-red-500 flex items-center justify-center">
+                <h1 className="text-4xl text-white">Placeholder</h1>
+            </div>
             {/* PLACEHOLDER */}
 
             <SolutionsSection />
