@@ -32,7 +32,7 @@ const DepoinmentSection: React.FC = () => {
   return (
     <section className="relative py-16 px-4 bg-[#0f143b]">
       <div className="relative max-w-6xl mx-auto">
-        <div className="p-8 mb-12">
+        <div className="p-8 mb-6">
           <h2 className="text-white text-center font-bold font-poppins text-5xl">
             Depoimentos de clientes
           </h2>
