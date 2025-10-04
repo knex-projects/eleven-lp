@@ -6,8 +6,8 @@ export default function AboutSection() {
         className="w-screen h-[870px] bg-cover flex gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-primary-text bg-center max-md:pt-0"
         style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-        <div className="">
-          <h1 className="text-[45px] font-bold  max-w-[493px] w-[86vw] max-lg:text-[40px] max-lg:text-center">
+        <div className="space-y-6">
+          <h1 className="text-[45px] font-bold  max-w-[493px] w-[86vw] max-lg:text-[40px]">
             Prazer, somos a Eleven Consultoria!
           </h1>
           <iframe
@@ -18,7 +18,7 @@ export default function AboutSection() {
             allow="autoplay; encrypted-media"
             allowFullScreen
           />
-          <h2 className="text-[24px] font-normal  max-w-[481px] pt-10 text-subtext w-[88vw] max-lg:text-[20px] max-lg:text-center">
+          <h2 className="text-[24px] font-normal  max-w-[481px] pt-6 text-subtext w-[88vw] max-lg:text-[20px] text-justify">
             A Eleven oferece consultoria estratégica personalizada para expandir
             sua empresa no mercado internacional e fortalecer sua presença
             global.

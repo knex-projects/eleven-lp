@@ -1,17 +1,63 @@
+import diversityIcon from "@/assets/images/icons/diversity-icon.svg";
+import ethicsIcon from "@/assets/images/icons/ethics-icon.svg";
+import sustainabilityIcon from "@/assets/images/icons/sustainability-icon.svg";
+import planetIcon from "@/assets/images/icons/globe-icon.svg";
+
+interface ValueCard {
+  icon: string;
+  title: string;
+  description: string;
+}
+
 export default function ValuesSection() {
+  const values: ValueCard[] = [
+    {
+      icon: diversityIcon,
+      title: "Diversidade Cultural",
+      description: "Valorizamos diferentes culturas, idiomas e formas de pensar como parte essencial do crescimento global."
+    },
+    {
+      icon: ethicsIcon,
+      title: "Ética e Transparência",
+      description: "Atuamos de forma íntegra em todos os mercados, respeitando leis e práticas locais."
+    },
+    {
+      icon: sustainabilityIcon,
+      title: "Sustentabilidade",
+      description: "Comprometemo-nos com práticas sustentáveis que preservam o meio ambiente para futuras gerações."
+    },
+    {
+      icon: planetIcon,
+      title: "Colaboração Global",
+      description: "Acreditamos na força das parcerias internacionais e no trabalho em rede para alcançar resultados sustentáveis."
+    }
+  ];
+
   return (
-    <section className="w-screen h-[875px] flex flex-col items-center justify-center gap-10 mb-6 bg-background">
-      <h1 className="text-5xl font-bold text-[#0F143B]">Nossos Valores</h1>
-      <div className="h-[480px] w-[60%] grid grid-cols-3">
-        <div className="bg-[#D9D9D9]">
-          <p>1</p>
-        </div>
-        <div className="bg-[#131845]">
-          <p>2</p>
-        </div>
-        <div className="bg-[#571818]">
-          <p>3</p>
-        </div>
+    <section className="w-screen min-h-[800px] flex flex-col items-center justify-center gap-10 bg-white px-8 py-16">
+      <h1 className="text-5xl font-bold text-[#0F143B] text-center mb-8">Nossos valores</h1>
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8">
+        {values.map((value, index) => (
+          <div key={index} className="bg-[#0F143B] rounded-lg p-7 flex flex-col gap-4">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <img 
+                  src={value.icon} 
+                  alt={`${value.title} icon`}
+                  className="w-8 h-8"
+                />
+              </div>
+              <div className="flex flex-col gap-3">
+                <h3 className="text-xl font-bold text-white">
+                  {value.title}
+                </h3>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  {value.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
