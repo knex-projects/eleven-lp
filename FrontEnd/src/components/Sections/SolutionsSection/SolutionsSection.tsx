@@ -1,5 +1,5 @@
 import SolutionCard from '@/components/Solutions/SolutionCard';
-import { Languages, Users, BookImage } from 'lucide-react';
+import { Languages, Users, BookImage, LandPlot, Map } from 'lucide-react';
 
 const solutionsData = [
     {
@@ -35,6 +35,28 @@ const solutionsData = [
         ],
         icon: <BookImage className="w-8 h-8" />,
     },
+    {
+        title: 'Internacionalização de ambientes',
+        description:
+            'Adaptamos ambientes comerciais, como restaurantes, hotéis, lojas e eventos, para receber clientes internacionais com excelência. Tradução  de cardápios, sinalização, treinamento básico de idiomas para equipes e  muito mais. Ofereça uma experiência inclusiva e memorável.',
+        benefits: [
+            'Experiência multicultural para clientes estrangeiros.',
+            'Maior visibilidade e atratividade para turistas e expatriados.',
+            'Equipe preparada para atendimento internacional.',
+        ],
+        icon: <LandPlot className="w-8 h-8" />,
+    },
+    {
+        title: 'Mapeamento de feiras',
+        description: 
+            'Identificamos as feiras e eventos nacionais e internacionais  ideais para o seu negócio. Potencialize seu networking, divulgue sua  marca e feche negócios em ambientes estrategicamente selecionados para  maximizar seu retorno.', 
+        benefits: [
+            'Networking qualificado com players do setor',
+            'Divulgação eficiente de produtos e serviços.',
+            'Identificação de oportunidades de negócio e parcerias.',
+        ],
+        icon: <Map className="w-8 h-8" />,
+  },
 ];
 
 export default function SoluctionsSection() {
@@ -66,6 +88,15 @@ export default function SoluctionsSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
                     <SolutionCard solution={solutionsData[1]} />
                     <SolutionCard solution={solutionsData[2]} />
+                </div>
+
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12">
+                    Internalização e mapeamento
+                </h3>
+        
+                <div className="grid grid-cols-1 gap-4 sm:gap-6 md:gap-8">
+                    <SolutionCard solution={solutionsData[3]} />
+                    <SolutionCard solution={solutionsData[4]} />
                 </div>
             </div>
         </section>
