@@ -1,4 +1,4 @@
-import backgroundImage from "@/assets/images/backgrounds/bg-about-us.png";
+import backgroundImage from "@/assets/images/backgrounds/sections/about-us.png";
 
 export default function AboutSection() {
   return (

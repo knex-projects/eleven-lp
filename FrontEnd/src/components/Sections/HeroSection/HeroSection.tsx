@@ -1,4 +1,4 @@
-import bgImg from "@/assets/images/backgrounds/bg-hero-section.png";
+import bgImg from "@/assets/images/backgrounds/sections/hero-section.png";
 
 export default function HeroSection() {
   return (

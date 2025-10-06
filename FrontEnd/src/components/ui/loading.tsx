@@ -1,6 +1,7 @@
 import logoBackground from "@/assets/images/logos/logo-background.png";
 import logoForeground from "@/assets/images/logos/logo-foreground.png";
 import "@/assets/css/loading/loading.css";
+import "@/assets/css/animations/animations.css";
 
 function Loading() {
 	return (
