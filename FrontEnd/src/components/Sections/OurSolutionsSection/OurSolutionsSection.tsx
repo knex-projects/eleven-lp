@@ -8,10 +8,10 @@ export default function OurSolutionsSection() {
         className="w-screen h-[870px] flex bg-cover gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-primary-text bg-center max-md:pt-0"
         style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <div className="">
+      <div className="mt-[120px]">
         <div className="">
           <h1 className="text-[45px] font-bold  max-w-[493px] w-[86vw] max-lg:text-[40px] max-lg:text-center">
-            Prazer, somos a Eleven Consultoria!
+            Nossas Soluções
           </h1>
           <div className="max-lg:hidden max-lg:absolute min-w-[80vw]"></div>
           <h2 className="text-[24px] font-normal  max-w-[481px] pt-10 text-subtext w-[88vw] max-lg:text-[20px] max-lg:text-center">
