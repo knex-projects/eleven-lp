@@ -24,16 +24,4 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-}
-
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.rotating {
-  animation: rotating 2s ease-in-out infinite;
 }/*# sourceMappingURL=loading.css.map */

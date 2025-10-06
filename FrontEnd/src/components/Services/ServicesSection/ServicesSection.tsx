@@ -8,15 +8,14 @@ import {
     CarouselPrevious,
 } from '@/components/ui/carousel';
 
-import service1Background from '@/assets/images/service1BG.jpg';
-import service2Background from '@/assets/images/service2BG.jpg';
-import service3Background from '@/assets/images/service3BG.jpg';
-import service4Background from '@/assets/images/service4BG.jpg';
-import service5Background from '@/assets/images/service5BG.jpg';
-import service6Background from '@/assets/images/service6BG.jpg';
-import service7Background from '@/assets/images/service7BG.jpg';
-import service8Background from '@/assets/images/service8BG.jpg';
-
+import service1Background from '@/assets/images/backgrounds/services/1.jpg';
+import service2Background from '@/assets/images/backgrounds/services/2.jpg';
+import service3Background from '@/assets/images/backgrounds/services/3.jpg';
+import service4Background from '@/assets/images/backgrounds/services/4.jpg';
+import service5Background from '@/assets/images/backgrounds/services/5.jpg';
+import service6Background from '@/assets/images/backgrounds/services/6.jpg';
+import service7Background from '@/assets/images/backgrounds/services/7.jpg';
+import service8Background from '@/assets/images/backgrounds/services/8.jpg';
 /**
  * Dados dos serviços oferecidos pela empresa.
  * Cada serviço contém uma imagem de fundo e um título descritivo.
