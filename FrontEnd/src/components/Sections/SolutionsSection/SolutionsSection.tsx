@@ -1,5 +1,5 @@
 import SolutionCard from '@/components/Solutions/SolutionCard';
-import { Languages, Users, BookImage } from 'lucide-react';
+import { Languages, Users, BookImage, GlobeIcon, Building2, Search, Handshake } from 'lucide-react';
 
 const solutionsData = [
     {
@@ -11,7 +11,7 @@ const solutionsData = [
             'Conteúdo preciso e culturalmente adaptado, sem perder a essência da sua marca.',
             'Supere barreiras linguísticas e abra portas para novos mercados e oportunidades.',
         ],
-        icon: <Languages className="w-8 h-8" />,
+        icon: <Languages className="size-[48px]" />,
     },
     {
         title: 'A dupla cidadania',
@@ -22,7 +22,7 @@ const solutionsData = [
             'Maior conhecimento do funcionamento das burocracias.',
             'Aumento das chances de um visto aprovado.',
         ],
-        icon: <Users className="w-8 h-8" />,
+        icon: <Users className="size-[40px]" />,
     },
     {
         title: 'Visto',
@@ -33,7 +33,51 @@ const solutionsData = [
             'Maior conhecimento do funcionamento das burocracias.',
             'Aumento das chances de um visto aprovado.',
         ],
-        icon: <BookImage className="w-8 h-8" />,
+        icon: <BookImage className="size-[48px]" />,
+    },
+       {
+        title: 'Análise de Viabilidade internacional ',
+        description:
+            'Antes de expandir, é essencial saber para onde ir e como chegar.  Nossa análise identifica a viabilidade do seu produto ou serviço em  mercados internacionais, avaliando demanda, concorrência,  regulamentações e potencial de crescimento. Tome decisões estratégicas  com base em dados concretos e minimize riscos.',
+        benefits: [
+            'Identificação de mercados promissores com alto potencial de adoção.',
+            'Redução de incertezas por meio de análise de dados robusta.',
+            'Direcionamento inteligente de investimentos e esforços.'
+        ],
+        icon: <GlobeIcon className="size-[40px]" />,
+    },
+    {
+        title: 'Estudo de mercado nacional ',
+        description:
+            'Conheça profundamente o terreno onde você pisa. Mapeamos  tendências, comportamentos do consumidor e oportunidades no mercado  nacional para que sua empresa não apenas compita, mas se destaque.',
+        benefits: [
+            'Visão 360° do seu mercado de atuação.',
+            'Identificação de tendências e gaps de mercado.',
+            'Estratégias precisas para conquistar e fidelizar clientes.'
+        ],
+        icon: <Building2 className="size-[48px]" />,
+    },
+     {
+        title: 'Estudo de Concorrência',
+        description:
+            'Saber o que o outro lado está fazendo é metade da batalha vencida. Analisamos seus concorrentes para revelar pontos fortes, fraquezas,  estratégias e oportunidades que permitirão que você se posicione de  maneira única e competitiva.',
+        benefits: [
+            'Insights estratégicos sobre o posicionamento da concorrência.',
+            'Vantagem competitiva através da diferenciação.',
+            'Identificação de oportunidades não exploradas no setor.'
+        ],
+        icon: <Search className="size-[48px]" />,
+    },
+     {
+        title: 'Estudo de Fornecedores ',
+        description:
+            'Uma cadeia de suprimentos eficiente é o coração do seu negócio.  Encontramos os fornecedores ideais para sua operação, avaliando  qualidade, confiabilidade, prazo e custo-benefício.',
+        benefits: [
+            'Rede de fornecedores qualificados e alinhados com sua demanda.',
+            'Redução de riscos e interrupções na operação.',
+            'Otimização de custos sem abrir mão da qualidade.'
+        ],
+        icon: <Handshake className="size-[48px]" />,
     },
 ];
 
@@ -50,14 +94,13 @@ export default function SoluctionsSection() {
             </div>
 
             <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-                {/* SEÇÃO DE TRADUÇÃO - DESCOMENTE CASO OUTRA PESSOA NÃO TENHA FEITO */}
-                {/* <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6">
+                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6">
                     Tradução
                 </h3>
 
                 <div className="mb-6 sm:mb-8 md:mb-10">
                     <SolutionCard solution={solutionsData[0]} />
-                </div> */}
+                </div> 
 
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12">
                     Consultoria Internacional
@@ -66,6 +109,20 @@ export default function SoluctionsSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
                     <SolutionCard solution={solutionsData[1]} />
                     <SolutionCard solution={solutionsData[2]} />
+                </div>
+
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12">
+                    Estudo mercadológico
+                </h3>
+                <div className="mb-6 sm:mb-8 md:mb-10">
+                    <SolutionCard solution={solutionsData[3]} />
+                </div> 
+                <div className="mb-6 sm:mb-8 md:mb-10">
+                    <SolutionCard solution={solutionsData[4]} />
+                </div> 
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+                    <SolutionCard solution={solutionsData[5]} />
+                    <SolutionCard solution={solutionsData[6]} />
                 </div>
             </div>
         </section>
