@@ -4,6 +4,7 @@ import About from './pages/About';
 import Solutions from './pages/Solutions';
 import { FullscreenLoading } from '@/components/ui/loading';
 import { useLoading } from '@/hooks/useLoading';
+import Materials from './pages/Materials';
 
 function App() {
     const isLoading = useLoading();
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/Sobre" element={<About />} />
                 <Route path="/Solucoes" element={<Solutions />} />
+                <Route path="/Materiais" element={<Materials />} />
             </Routes>
         </BrowserRouter>
     );
