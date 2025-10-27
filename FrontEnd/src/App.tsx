@@ -5,6 +5,7 @@ import Solutions from './pages/Solutions';
 import { FullscreenLoading } from '@/components/ui/loading';
 import { useLoading } from '@/hooks/useLoading';
 import Materials from './pages/Materials';
+import Cases from './pages/Cases/Cases';
 
 function App() {
     const isLoading = useLoading();
@@ -20,6 +21,7 @@ function App() {
                 <Route path="/Sobre" element={<About />} />
                 <Route path="/Solucoes" element={<Solutions />} />
                 <Route path="/Materiais" element={<Materials />} />
+                <Route path="/Cases" element={<Cases />} />
             </Routes>
         </BrowserRouter>
     );
