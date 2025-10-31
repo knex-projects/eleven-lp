@@ -21,7 +21,7 @@ const solutionsData = [
             'Conteúdo preciso e culturalmente adaptado, sem perder a essência da sua marca.',
             'Supere barreiras linguísticas e abra portas para novos mercados e oportunidades.',
         ],
-        icon: <Languages className="size-[48px]" />,
+        icon: <Languages className="size-[48px] max-sm:size-[32px]" />,
     },
     {
         title: 'A dupla cidadania',
@@ -32,7 +32,7 @@ const solutionsData = [
             'Maior conhecimento do funcionamento das burocracias.',
             'Aumento das chances de um visto aprovado.',
         ],
-        icon: <Users className="size-[40px]" />,
+        icon: <Users className="size-[40px] max-sm:size-[32px]" />,
     },
     {
         title: 'Visto',
@@ -43,7 +43,7 @@ const solutionsData = [
             'Maior conhecimento do funcionamento das burocracias.',
             'Aumento das chances de um visto aprovado.',
         ],
-        icon: <BookImage className="size-[48px]" />,
+        icon: <BookImage className="size-[48px] max-sm:size-[32px]" />,
     },
     {
         title: 'Análise de Viabilidade internacional ',
@@ -54,7 +54,7 @@ const solutionsData = [
             'Redução de incertezas por meio de análise de dados robusta.',
             'Direcionamento inteligente de investimentos e esforços.',
         ],
-        icon: <GlobeIcon className="size-[40px]" />,
+        icon: <GlobeIcon className="size-[40px] max-sm:size-[32px]" />,
     },
     {
         title: 'Estudo de mercado nacional ',
@@ -65,7 +65,7 @@ const solutionsData = [
             'Identificação de tendências e gaps de mercado.',
             'Estratégias precisas para conquistar e fidelizar clientes.',
         ],
-        icon: <Building2 className="size-[48px]" />,
+        icon: <Building2 className="size-[48px] max-sm:size-[32px]" />,
     },
     {
         title: 'Estudo de Concorrência',
@@ -76,7 +76,7 @@ const solutionsData = [
             'Vantagem competitiva através da diferenciação.',
             'Identificação de oportunidades não exploradas no setor.',
         ],
-        icon: <Search className="size-[48px]" />,
+        icon: <Search className="size-[48px] max-sm:size-[32px]" />,
     },
     {
         title: 'Estudo de Fornecedores ',
@@ -87,7 +87,7 @@ const solutionsData = [
             'Redução de riscos e interrupções na operação.',
             'Otimização de custos sem abrir mão da qualidade.',
         ],
-        icon: <Handshake className="size-[48px]" />,
+        icon: <Handshake className="size-[48px] max-sm:size-[32px]" />,
     },
     {
         title: 'Internacionalização de ambientes',
@@ -109,7 +109,7 @@ const solutionsData = [
             'Divulgação eficiente de produtos e serviços.',
             'Identificação de oportunidades de negócio e parcerias.',
         ],
-        icon: <Map className="size-[48px]" />,
+        icon: <Map className="size-[48px] max-sm:size-[32px]" />,
     },
 ];
 
