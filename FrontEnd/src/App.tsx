@@ -7,6 +7,9 @@ import { useLoading } from '@/hooks/useLoading';
 import Materials from './pages/Materials';
 import Cases from './pages/Cases/Cases';
 
+import '@/assets/css/basic-elements/button/button.css'
+import '@/assets/css/basic-elements/search-box/search-box.css'
+
 function App() {
     const isLoading = useLoading();
 
