@@ -48,7 +48,7 @@ const STATIC_CARDS = [
 function FreeMaterialsSection() {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
-  const cardsPerPage = 8;
+  const cardsPerPage = 9;
 
   const allCards = STATIC_CARDS;
 
