@@ -28,7 +28,7 @@ export default function Header({ page }: HeaderProps) {
 
             <Popover open={isMenuOpen} onOpenChange={setIsMenuOpen}>
                 <PopoverTrigger
-                    className="absolute right-5 top-3 pb-2 min-md:hidden"
+                    className="absolute right-5 top-3 pb-2 min-md:hidden !bg-transparent"
                     onClick={handleMenuToggle}
                 >
                     {isMenuOpen ? (

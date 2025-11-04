@@ -17,7 +17,7 @@ export default function HeroSection() {
           Descubra como nossas soluções elevam os seus resultados!
         </h2>
 
-        <button className="text-primary-text w-[325px] h-[64px] text-[24px] rounded-[10px] bg-[#3477DD]  font-medium hover:duration-300 hover:bg-[#1B3D70] max-sm:w-[80%]">
+        <button className="w-[325px] h-[64px] text-[24px] rounded-[10px] max-sm:w-[80%]">
           <h1>Fale com um consultor</h1>
         </button>
       </section>
