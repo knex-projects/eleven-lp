@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { IoSearch, IoArrowBackSharp, IoArrowForwardSharp, IoClose } from "react-icons/io5";
 import { useState, useMemo, useEffect } from "react";
 
@@ -6,8 +5,6 @@ import { Button } from "@/components/ui/button";
 
 import ManualCongressista from "@/assets/images/backgrounds/material-cards/manual_congressista.png";
 import CapacitacaoLinkedin from "@/assets/images/backgrounds/material-cards/capacitacao_linkedin.png";
-import ManualExportacao from "@/assets/images/backgrounds/material-cards/manual_exportacao.png";
-import GuiaEmissaoPassaporte from "@/assets/images/backgrounds/material-cards/guia_emissao_passaporte.png";
 
 type CardInfoProps = {
   image: string;
@@ -17,9 +14,8 @@ type CardInfoProps = {
 }
 
 function FreeMaterialCard({ image, name, description, download }: CardInfoProps) {
-  const navigate = useNavigate();
   const handleClick = () => {
-    navigate(download)
+    window.open(download, '_blank');
   }
 
   return(
@@ -39,27 +35,14 @@ const STATIC_CARDS = [
     image: ManualCongressista,
     name: "Manual do congressista",
     description: "Tudo que você precisa saber para sua sobrevivência em João Pessoa",
-    download: "https://app.pipefy.com/public/form/WC4mdOH9"
+    download: "https://drive.google.com/file/d/1tJui8Ql3RbAzue-DHrq2kJi7TeMmwKJQ/view?usp=sharing"
   },
   {
     image: CapacitacaoLinkedin,
     name: "Capacitação LinkedIn",
     description: "Qual o seu conhecimento sobre Linkedin?",
-    download: "https://app.pipefy.com/public/form/WC4mdOH9"
+    download: "https://drive.google.com/file/d/1W6yjXi3N4TDEDdbjUAzSpkBBUyI8QEi6/view?usp=drive_link"
   },
-  {
-    image: ManualExportacao,
-    name: "Manual de Exportação",
-    description: "Guia prático para descomplicar a exportação do seu produto!",
-    download: "https://app.pipefy.com/public/form/FsIs4HrM"
-  },
-    {
-    image: GuiaEmissaoPassaporte,
-    name: "Guia para emissão de passaporte",
-    description: "Confira o passo a passo e tire o seu passaporte agora!",
-    download: "https://app.pipefy.com/public/form/jF1D6Crr"
-  },
-
 ];
 
 function FreeMaterialsSection() {
@@ -111,96 +94,98 @@ function FreeMaterialsSection() {
   };
 
   return (
-    <section>
-      <div className="relative w-full min-h-[870px] bg-background-muted-light text-dark-text">
-        <div className="flex flex-col md:flex-row justify-between pt-[40px] pl-[25px] pr-[25px] items-center space-y-4 md:space-y-0">
-          <h2 className="font-bold text-center md:text-left">
-            {searchTerm ? `Resultados para "${searchTerm}" - ` : ""}
-            Página {currentPage} de {totalPages}
-            {searchTerm && ` (${filteredCards.length} resultado${filteredCards.length !== 1 ? 's' : ''})`}
-          </h2>
-          <div className="bg-background p-[3px] rounded-[7px] border-[1px] border-muted-subtext-light flex items-center relative w-full md:w-auto">
-            <IoSearch className="text-muted-subtext ml-2"/>
-            <input 
-              type="search" 
-              name="materiais" 
-              id="materials" 
-              placeholder="Pesquisar..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-2 pr-8 bg-transparent text-sidebar-primary outline-none w-full md:w-64"
-            />
-            {searchTerm && (
-              <button
-                onClick={clearSearch}
-                className="absolute right-2 unstyled transition-all"
-              >
-                <IoClose size={18} />
-              </button>
+    <section className="">
+      <div className="relative w-full min-h-[870px] bg-background-muted-light text-dark-text flex justify-around">
+        <div className="max-w-[1152px]">
+          <div className="flex flex-col md:flex-row justify-between pt-[40px] pl-[25px] pr-[25px] items-center space-y-4 md:space-y-0">
+            <h2 className="font-bold text-center md:text-left">
+              {searchTerm ? `Resultados para "${searchTerm}" - ` : ""}
+              Página {currentPage} de {totalPages}
+              {searchTerm && ` (${filteredCards.length} resultado${filteredCards.length !== 1 ? 's' : ''})`}
+            </h2>
+            <div className="bg-background p-[3px] rounded-[7px] border-[1px] border-muted-subtext-light flex items-center relative w-full md:w-auto">
+              <IoSearch className="text-muted-subtext ml-2"/>
+              <input 
+                type="search" 
+                name="materiais" 
+                id="materials" 
+                placeholder="Pesquisar..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="pl-2 pr-8 bg-transparent text-sidebar-primary outline-none w-full md:w-64"
+              />
+              {searchTerm && (
+                <button
+                  onClick={clearSearch}
+                  className="absolute right-2 unstyled transition-all"
+                >
+                  <IoClose size={18} />
+                </button>
+              )}
+            </div>
+          </div>
+          <hr className="border-t-1 border-muted-subtext m-2 mr-4 ml-4"/>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 min-h-[600px]">
+            {currentCards.length > 0 ? (
+              currentCards.map((card, index) => (
+                <FreeMaterialCard 
+                  key={`${card.name}-${index}-${currentPage}`}
+                  image={card.image}
+                  name={card.name}
+                  description={card.description}
+                  download={card.download}
+                />
+              ))
+            ) : (
+              <div className="col-span-full text-center py-16">
+                <p className="text-muted-subtext text-lg">
+                  {searchTerm ? `Nenhum resultado encontrado para "${searchTerm}"` : "Nenhum material disponível"}
+                </p>
+                {searchTerm && (
+                  <Button
+                    onClick={clearSearch}
+                    className="w-[100px] mt-4 unstyled text-xl hover:underline"
+                  >
+                    Limpar pesquisa
+                  </Button>
+                )}
+              </div>
             )}
           </div>
-        </div>
-        <hr className="border-t-1 border-muted-subtext m-2 mr-4 ml-4"/>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [@media(min-width:1280px)]:grid-cols-4 gap-4 p-4 min-h-[600px]">
-          {currentCards.length > 0 ? (
-            currentCards.map((card, index) => (
-              <FreeMaterialCard 
-                key={`${card.name}-${index}-${currentPage}`}
-                image={card.image}
-                name={card.name}
-                description={card.description}
-                download={card.download}
-              />
-            ))
-          ) : (
-            <div className="col-span-full text-center py-16">
-              <p className="text-muted-subtext text-lg">
-                {searchTerm ? `Nenhum resultado encontrado para "${searchTerm}"` : "Nenhum material disponível"}
-              </p>
-              {searchTerm && (
-                <Button
-                  onClick={clearSearch}
-                  className="w-[100px] mt-4 unstyled text-xl hover:underline"
-                >
-                  Limpar pesquisa
-                </Button>
-              )}
+
+          {totalPages > 1 && (
+            <div className="flex justify-end space-x-4 pb-8 mr-[15px]">
+              <Button
+                onClick={goToPrevPage}
+                disabled={currentPage === 1}
+                className="w-[64px] h-[64px] !text-sidebar-primary items-center gap-2 !bg-background-muted"
+              >
+                <IoArrowBackSharp />
+              </Button>
+              
+              <div className="flex space-x-2">
+                {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
+                  <Button
+                    key={page}
+                    onClick={() => goToPage(page)}
+                    className={currentPage === page ? "w-[64px] h-[64px] !text-dark-text items-center !bg-background" : "w-[64px] h-[64px] !text-sidebar-primary items-center !bg-background-muted"}
+                  >
+                    {page}
+                  </Button>
+                ))}
+              </div>
+
+              <Button
+                onClick={goToNextPage}
+                disabled={currentPage === totalPages}
+                className="w-[64px] h-[64px] !text-sidebar-primary items-center gap-2 !bg-background-muted"
+              >
+                <IoArrowForwardSharp />
+              </Button>
             </div>
           )}
         </div>
-
-        {totalPages > 1 && (
-          <div className="flex justify-end space-x-4 pb-8 mr-[15px]">
-            <Button
-              onClick={goToPrevPage}
-              disabled={currentPage === 1}
-              className="w-[64px] h-[64px] !text-sidebar-primary items-center gap-2 !bg-background-muted"
-            >
-              <IoArrowBackSharp />
-            </Button>
-            
-            <div className="flex space-x-2">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(page => (
-                <Button
-                  key={page}
-                  onClick={() => goToPage(page)}
-                  className={currentPage === page ? "w-[64px] h-[64px] !text-dark-text items-center !bg-background" : "w-[64px] h-[64px] !text-sidebar-primary items-center !bg-background-muted"}
-                >
-                  {page}
-                </Button>
-              ))}
-            </div>
-
-            <Button
-              onClick={goToNextPage}
-              disabled={currentPage === totalPages}
-              className="w-[64px] h-[64px] !text-sidebar-primary items-center gap-2 !bg-background-muted"
-            >
-              <IoArrowForwardSharp />
-            </Button>
-          </div>
-        )}
       </div>
     </section>
   );
