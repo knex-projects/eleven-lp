@@ -21,7 +21,7 @@ const solutionsData = [
             'Conteúdo preciso e culturalmente adaptado, sem perder a essência da sua marca.',
             'Supere barreiras linguísticas e abra portas para novos mercados e oportunidades.',
         ],
-        icon: <Languages className="size-[48px] max-sm:size-[32px]" />,
+        icon: <Languages className="size-[48px]" />,
     },
     {
         title: 'A dupla cidadania',
@@ -32,7 +32,7 @@ const solutionsData = [
             'Maior conhecimento do funcionamento das burocracias.',
             'Aumento das chances de um visto aprovado.',
         ],
-        icon: <Users className="size-[40px] max-sm:size-[32px]" />,
+        icon: <Users className="size-[40px]" />,
     },
     {
         title: 'Visto',
@@ -43,7 +43,7 @@ const solutionsData = [
             'Maior conhecimento do funcionamento das burocracias.',
             'Aumento das chances de um visto aprovado.',
         ],
-        icon: <BookImage className="size-[48px] max-sm:size-[32px]" />,
+        icon: <BookImage className="size-[48px]" />,
     },
     {
         title: 'Análise de Viabilidade internacional ',
@@ -54,7 +54,7 @@ const solutionsData = [
             'Redução de incertezas por meio de análise de dados robusta.',
             'Direcionamento inteligente de investimentos e esforços.',
         ],
-        icon: <GlobeIcon className="size-[40px] max-sm:size-[32px]" />,
+        icon: <GlobeIcon className="size-[40px]" />,
     },
     {
         title: 'Estudo de mercado nacional ',
@@ -65,7 +65,7 @@ const solutionsData = [
             'Identificação de tendências e gaps de mercado.',
             'Estratégias precisas para conquistar e fidelizar clientes.',
         ],
-        icon: <Building2 className="size-[48px] max-sm:size-[32px]" />,
+        icon: <Building2 className="size-[48px]" />,
     },
     {
         title: 'Estudo de Concorrência',
@@ -76,7 +76,7 @@ const solutionsData = [
             'Vantagem competitiva através da diferenciação.',
             'Identificação de oportunidades não exploradas no setor.',
         ],
-        icon: <Search className="size-[48px] max-sm:size-[32px]" />,
+        icon: <Search className="size-[48px]" />,
     },
     {
         title: 'Estudo de Fornecedores ',
@@ -87,7 +87,7 @@ const solutionsData = [
             'Redução de riscos e interrupções na operação.',
             'Otimização de custos sem abrir mão da qualidade.',
         ],
-        icon: <Handshake className="size-[48px] max-sm:size-[32px]" />,
+        icon: <Handshake className="size-[48px]" />,
     },
     {
         title: 'Internacionalização de ambientes',
@@ -109,14 +109,14 @@ const solutionsData = [
             'Divulgação eficiente de produtos e serviços.',
             'Identificação de oportunidades de negócio e parcerias.',
         ],
-        icon: <Map className="size-[48px] max-sm:size-[32px]" />,
+        icon: <Map className="size-[48px]" />,
     },
 ];
 
 export default function SoluctionsSection() {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 py-8 sm:py-12 md:py-16 md:px-[10%] max-sm:px-[6%] bg-background">
-            <div className="w-full max-w-7xl ">
+        <section className="w-full min-h-screen flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 py-8 sm:py-12 md:py-16 bg-background">
+            <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F143B] mb-2 sm:mb-4">
                     Confira nossas soluções
                 </h1>
@@ -125,7 +125,7 @@ export default function SoluctionsSection() {
                 </p>
             </div>
 
-            <div className="w-full max-w-7xl ">
+            <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6">
                     Tradução
                 </h3>

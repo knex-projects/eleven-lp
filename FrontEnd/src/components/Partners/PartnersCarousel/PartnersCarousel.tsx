@@ -33,8 +33,8 @@ export default function PartnersCarousel() {
         partners.length < 7 ? [...partners, ...partners] : partners;
 
     return (
-        <section className="w-full h-auto bg-background text-dark-text flex justify-center items-center flex-col py-32 max-sm:py-20">
-            <h1 className="text-4xl font-bold text-center mb-16 max-sm:text-[24px] ">
+        <section className="w-full h-auto bg-background text-dark-text flex justify-center items-center flex-col py-32">
+            <h1 className="text-4xl font-bold text-center mb-16">
                 Empresas com quem já colaboramos
             </h1>
 
