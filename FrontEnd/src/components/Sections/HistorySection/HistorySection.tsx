@@ -2,7 +2,7 @@ import logoImg from "@/assets/images/logos/eleven-big-logo.svg";
 
 export default function HistorySection() {
   return (
-    <section className="w-screen py-14 bg-background flex items-center min-md:justify-evenly max-xl:flex-col-reverse lg:flex-row ">
+    <section className="w-screen py-14 md:px-[10%] bg-background flex items-center min-md:justify-between max-xl:flex-col-reverse lg:flex-row ">
       <div className="flex items-center">
         <img
           src={logoImg}

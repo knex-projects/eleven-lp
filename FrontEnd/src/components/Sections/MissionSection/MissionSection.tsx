@@ -2,7 +2,7 @@ import rocketIcon from "@/assets/images/icons/planet-icon.svg";
 
 export default function MissionSection() {
   return (
-    <section className="bg-dark-background w-screen flex items-center max-md:justify-center min-md:justify-evenly max-lg:flex-col py-14">
+    <section className="bg-dark-background w-screen flex items-center max-md:justify-center min-md:justify-between max-xl:flex-col py-14 md:px-[10%]">
       <div className="">
         <h1 className="text-primary-text text-[45px] w-[88vw] pb-10 font-bold max-w-[655px] max-sm:max-w-[392px] max-lg:text-[32px] ">
           A nossa missão como empresa{" "}
@@ -18,7 +18,7 @@ export default function MissionSection() {
           receitas e construir resiliência
         </p>
       </div>
-      <img src={rocketIcon} className="w-[400px] max-lg:mt-10 max-md:size-[284px]" />
+      <img src={rocketIcon} className="w-[400px] max-lg:mt-10 max-xl:size-[284px]" />
     </section>
   );
 }

@@ -10,7 +10,7 @@ export default function AboutSection() {
     backgroundImage: `linear-gradient(to right, rgba(19, 24, 69, 1), rgba(0,0,0,0.2)), url(${backgroundImage})`,
   }}
     >
-        <div className="w-[88%]  relative max-sm:pt-[120px] max-2xl:max-w-[1150px] min-2xl:w-[70%]">
+        <div className="max-sm:w-[88%]  relative max-sm:pt-[224px] max-2xl:max-w-[1150px] w-[80%]">
           <h1 className="text-[48px] font-bold max-w-[572px]  w-[100%] max-lg:text-[40px] max-sm:text-[32px] ">
             Prazer, somos a Eleven Consultoria!
           </h1>

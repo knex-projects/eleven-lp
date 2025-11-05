@@ -30,16 +30,16 @@ const testimonials: Testimonial[] = [
 
 const DepoinmentSection: React.FC = () => {
   return (
-    <section className="relative py-16 px-4 bg-[#0f143b]">
+    <section className="relative py-16 px-[10%] bg-[#0f143b]">
       <div className="relative max-w-6xl mx-auto">
-        <div className="p-8 mb-6">
+        <div className="py-8 mb-6">
           <h2 className="text-white text-center font-bold font-poppins text-5xl max-sm:text-[32px]">
             Depoimentos de clientes
           </h2>
         </div>
 
-        <div className="p-8">
-          <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-28 px-4">
+        <div className="py-8">
+          <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-28 ">
              {testimonials.map((testimonial, index) => (
                <div
                  key={testimonial.id}
