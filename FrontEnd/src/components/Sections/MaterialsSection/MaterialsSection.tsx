@@ -1,5 +1,5 @@
 import { IoArrowDownSharp } from 'react-icons/io5'
-import background from '../../../assets/images/backgrounds/sections/Materials.png'
+import backgroundImage from '../../../assets/images/backgrounds/sections/Materials.png'
 import learnMoreIcon from "@/assets/images/icons/learn-more.png"
 
 export default function MaterialsSection(){
@@ -15,12 +15,6 @@ export default function MaterialsSection(){
            Acreditamos que o conhecimento é a chave para uma internacionalização bem-sucedida. Por isso, nossa empresa tem o prazer de oferecer um vasto acervo de materiais gratuitos desenvolvidos por nossos especialistas.
           </h2>
         </div>
-        <div className="mt-[20px] h-[300px] flex justify-center relative">
-          <img className="w-[300px] rotating" src={learnMoreIcon} alt="Saiba mais"/>
-          <IoArrowDownSharp className="text-[50px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
-        </div>
-      </div>
-            </div>
-        </section>
+      </section>
     )
 }

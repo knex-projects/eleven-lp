@@ -1,9 +1,38 @@
-import { IoArrowDownSharp } from 'react-icons/io5'
-import background from '../../../assets/images/backgrounds/sections/cases.png'
-import learnMoreIcon from "@/assets/images/icons/learn-more.png"
+import { IoArrowDownSharp } from 'react-icons/io5';
+import background from '../../../assets/images/backgrounds/sections/cases.png';
+import learnMoreIcon from '@/assets/images/icons/learn-more.png';
+import CaseCard from '@/components/Cases/CaseCard';
 
-export default function CasesSection(){
-    return(
+/**
+ * Dados dos cases de sucesso.
+ * Adicionar os cases reais posteriormente
+ */
+const casesData = [
+    {
+        title: 'Case 1',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+        image: '',
+        link: '#',
+    },
+    {
+        title: 'Case 2',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+        image: '',
+        link: '#',
+    },
+    {
+        title: 'Case 3',
+        description:
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
+        image: '',
+        link: '#',
+    },
+];
+
+export default function CasesSection() {
+    return (
         <section>
             <div className="relative w-full h-[870px]  bg-cover bg-center  max-md:h-[745px]  text-white flex justify-evenly items-center pt-[280px] max-sm:pt-[224px] "  style={{ backgroundImage: `url(${background})`}}>
             <div className="max-sm:w-[88%] w-[80%]">
@@ -24,6 +53,12 @@ export default function CasesSection(){
         </div>
       </div>
             </div>
+
+            <section className="w-full min-h-screen flex flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20 py-12 sm:py-16 md:py-20 bg-background px-4 sm:px-6 lg:px-8">
+                {casesData.map((caseItem, index) => (
+                    <CaseCard key={index} caseData={caseItem} />
+                ))}
+            </section>
         </section>
-    )
+    );
 }

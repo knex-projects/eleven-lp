@@ -1,0 +1,15 @@
+button {
+	background-color: var(--button-background);
+	color: var(--primary-foreground);
+	transition: all .3s;
+	font-weight: 600;
+	.unstyled {
+    	background-color: transparent;
+		&:hover {
+			filter: none;
+		}
+  	}
+	&:hover {
+		filter: brightness(120%);
+	}
+}
