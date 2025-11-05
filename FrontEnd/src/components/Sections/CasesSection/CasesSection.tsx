@@ -5,28 +5,28 @@ import CaseCard from '@/components/Cases/CaseCard';
 
 /**
  * Dados dos cases de sucesso.
- * Adicione aqui os cases reais da empresa.
+ * Adicionar os cases reais posteriormente
  */
 const casesData = [
     {
         title: 'Case 1',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
-        image: 'https://placehold.co/600x400/3B82F6/FFFFFF?text=Case+1',
+        image: '',
         link: '#',
     },
     {
         title: 'Case 2',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
-        image: 'https://placehold.co/600x400/1E40AF/FFFFFF?text=Case+2',
+        image: '',
         link: '#',
     },
     {
         title: 'Case 3',
         description:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
-        image: 'https://placehold.co/600x400/3B82F6/FFFFFF?text=Case+3',
+        image: '',
         link: '#',
     },
 ];
