@@ -8,38 +8,21 @@ import "@/assets/css/footer/footer.css";
 
 export default function Footer() {
   return (
-    <footer className="text-primary-text lg:px-[8.8%]  max-sm:px-[6%] max-sm:pt-16 px-12 pt-24 bg-footer-background h-full">
+    <footer className="text-primary-text lg:px-48 px-12 pt-24 bg-footer-background h-full">
       <div className="flex flex-wrap flex-col sm:flex-row text-muted-subtext items-start justify-center">
-        <ul className="min-w-50 m-2.5 flex gap-3">
-          <div>
-            <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
-              Fale conosco
-            </h1>
-            <li>
-              <Link to={"https://wa.me/5521975922237"}>
-                +55 (21) 97592-2237
-              </Link>
-            </li>
-            <li>
-              <Link to={"ElevenJr.com.br"}>ElevenJr.com.br</Link>
-            </li>
-            <li>
-              <Link to={"mailto:vendas.elevenjr@gmail.com"}>
-                vendas.elevenjr@gmail.com
-              </Link>
-            </li>
-          </div>
-
-          <div className="flex-auto sm:hidden">
-            <h1 className=" text-primary-text mb-2.5 text-[1.125rem]">
-              Parceiros
-            </h1>
-            <li>
-              <Link to={"https://elevenjr.com/parceiros"}>
-                Venha ser um Parceiro
-              </Link>
-            </li>
-          </div>
+        <ul className="min-w-50 m-2.5 flex-auto">
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Fale conosco</h1>
+          <li>
+            <Link to={"https://wa.me/5521975922237"}>+55 (21) 97592-2237</Link>
+          </li>
+          <li>
+            <Link to={"ElevenJr.com.br"}>ElevenJr.com.br</Link>
+          </li>
+          <li>
+            <Link to={"mailto:vendas.elevenjr@gmail.com"}>
+              vendas.elevenjr@gmail.com
+            </Link>
+          </li>
         </ul>
 
         <ul className="min-w-50 m-2.5 flex-auto pb-5">
@@ -78,10 +61,8 @@ export default function Footer() {
           </li>
         </ul>
 
-        <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
-          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
-            Parceiros
-          </h1>
+        <ul className="min-w-50 m-2.5 flex-auto">
+          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Parceiros</h1>
           <li>
             <Link to={"https://elevenjr.com/parceiros"}>
               Venha ser um Parceiro
@@ -89,14 +70,14 @@ export default function Footer() {
           </li>
         </ul>
 
-        <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
+        <ul className="min-w-50 m-2.5 flex-auto">
           <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Blog</h1>
           <li>
             <Link to={"https://elevenjr.com/blog"}>Conheça nosso Blog</Link>
           </li>
         </ul>
 
-        <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
+        <ul className="min-w-50 m-2.5 flex-auto">
           <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Cases</h1>
           <li>
             <Link to={"https://elevenjr.com/cases"}>Veja nossos cases</Link>

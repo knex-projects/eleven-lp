@@ -17,18 +17,18 @@ export default function Header({ page }: HeaderProps) {
     };
 
     return (
-        <section className="z-[1] w-screen backdrop-blur-lg bg-background-muted fixed top-0 grid justify-items-center content-center max-md:h-[104px] ">
+        <section className="z-[1] w-screen backdrop-blur-lg bg-background-muted fixed top-0 grid justify-items-center content-center max-[760px]">
             <Link to={'/'}>
                 <img
                     src={logo}
-                    className="w-[100px] p-1 max-[760px]:w-[72px] max-[760px]:h-[72px] cursor-pointer max-md:col-span-2 max-lg:w-[70px]"
+                    className="w-[100px] p-1 max-[760px]:w-[72px] max-[760px]:h-[72px] cursor-pointer max-lg:w-[70px]"
                     alt="Logo"
                 />
             </Link>
 
             <Popover open={isMenuOpen} onOpenChange={setIsMenuOpen}>
                 <PopoverTrigger
-                    className="absolute top-[28px] right-6 min-md:hidden"
+                    className="absolute right-5 top-3 pb-2 min-md:hidden !bg-transparent"
                     onClick={handleMenuToggle}
                 >
                     {isMenuOpen ? (
