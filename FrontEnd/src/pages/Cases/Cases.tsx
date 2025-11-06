@@ -6,7 +6,7 @@ import CasesSection from "@/components/Sections/CasesSection/CasesSection";
 export default function Cases() {
   return (
     <>
-      <Header page="cases" />
+      <Header page="Cases" />
       <CasesSection />
       <Footer />
     </>

@@ -10,36 +10,36 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin in arcu in laoreet.",
-    clientName: "Cliente X",
+    text: "O serviço de tradução foi muito satisfatório. Cumprindo prazos e sempre com muito profissionalismo.",
+    clientName: "Ana Britto",
     clientRole: "Dono da Empresa X",
   },
   {
     id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin in arcu in laoreet.",
-    clientName: "Cliente X",
+    text: "Muito bom, gostei bastante da dedicação de todos para nos ajudar!",
+    clientName: "Igor Silva Brito",
     clientRole: "Dono da Empresa X",
   },
   {
     id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin in arcu in laoreet.",
-    clientName: "Cliente X",
+    text: "Gostei bastante, estavam sempre disponiveis! ",
+    clientName: "Sarah Borges",
     clientRole: "Dono da Empresa X",
   },
 ];
 
 const DepoinmentSection: React.FC = () => {
   return (
-    <section className="relative py-16 px-4 bg-[#0f143b]">
+    <section className="relative py-16 px-[10%] bg-[#0f143b]">
       <div className="relative max-w-6xl mx-auto">
-        <div className="p-8 mb-6">
-          <h2 className="text-white text-center font-bold font-poppins text-5xl">
+        <div className="py-8 mb-6">
+          <h2 className="text-white text-center font-bold font-poppins text-5xl max-sm:text-[32px]">
             Depoimentos de clientes
           </h2>
         </div>
 
-        <div className="p-8">
-          <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-8 px-4">
+        <div className="py-8">
+          <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-28 ">
              {testimonials.map((testimonial, index) => (
                <div
                  key={testimonial.id}
@@ -48,8 +48,8 @@ const DepoinmentSection: React.FC = () => {
                  } md:items-start`}
                >
                 <div className="max-w-72">
-                  <div className="bg-[#070920] rounded-lg p-6 relative">
-                     <div className="text-[#898989] text-lg font-roboto">
+                  <div className="bg-[#070920] rounded-lg p-6 relative xl:h-[188px] xl:w-[368px] max-sm:w-[264px] max-sm:h-[162px]  ">
+                     <div className="text-[#898989] text-lg font-roboto max-sm:text-[16px]">
                        <span className="text-2xl text-white italic">"{" "}</span>
                         {testimonial.text}
                        <span className="text-2xl text-white italic">{" "}"</span>
@@ -96,7 +96,7 @@ const DepoinmentSection: React.FC = () => {
                     <h3 className="font-semibold text-lg">
                       {testimonial.clientName}
                     </h3>
-                    <p className="text-sm text-white/80">
+                    <p className="text-sm text-white/80 hidden">
                       {testimonial.clientRole}
                     </p>
                   </div>
