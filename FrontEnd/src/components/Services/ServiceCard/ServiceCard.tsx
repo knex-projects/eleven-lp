@@ -8,6 +8,7 @@
 type Service = {
   src: string;
   title: string;
+  href: string;
 };
 
 /**
@@ -46,9 +47,12 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       <h3 className="font-bold text-2xl text-[#FAF1F1] drop-shadow-md">
         {service.title}
       </h3>
-      <button className="block sm:hidden py-2 px-6 bg-blue-500 text-white font-semibold rounded-sm text-sm">
+      <a
+        href={service.href}
+        className="block sm:hidden py-2 px-6 bg-blue-500 text-white font-semibold rounded-sm text-sm"
+      >
         Saiba mais
-      </button>
+      </a>
     </div>
   );
 }

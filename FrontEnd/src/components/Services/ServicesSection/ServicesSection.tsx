@@ -19,15 +19,36 @@ import service7Background from "@/assets/images/backgrounds/services/7.jpg";
 import service8Background from "@/assets/images/backgrounds/services/8.jpg";
 
 const servicesData = [
-  { src: service1Background, title: "Estudo de mercado" },
-  { src: service3Background, title: "Internacionalização e mapeamento" },
-  { src: service4Background, title: "Estudo de concorrência" },
-  { src: service5Background, title: "Estudo de fornecedores" },
-  { src: service6Background, title: "Mapeamento de feiras" },
-  { src: service7Background, title: "Traduções" },
+  {
+    src: service1Background,
+    title: "Estudo de mercado",
+    href: "/Solucoes#estudo-de-mercado",
+  },
+  {
+    src: service3Background,
+    title: "Internacionalização e mapeamento",
+    href: "/Solucoes#internacionalizacao-e-mapeamento",
+  },
+  {
+    src: service4Background,
+    title: "Estudo de concorrência",
+    href: "/Solucoes#estudo-de-concorrencia",
+  },
+  {
+    src: service5Background,
+    title: "Estudo de fornecedores",
+    href: "/Solucoes#estudo-de-fornecedores",
+  },
+  {
+    src: service6Background,
+    title: "Mapeamento de feiras",
+    href: "/Solucoes#mapeamento-de-feiras",
+  },
+  { src: service7Background, title: "Traduções", href: "/Solucoes#traducao" },
   {
     src: service8Background,
     title: "Consultoria Internacional",
+    href: "/Solucoes#consultoria-internacional",
   },
 ];
 
@@ -53,10 +74,10 @@ export default function ServicesSection() {
   return (
     <section className="w-full h-auto bg-[#f1f1f1] flex justify-center items-center flex-col py-32 px-4">
       <div className="text-center mb-12 w-full">
-        <h1 className="text-5xl text-[#131737] font-bold">
+        <h1 className="text-3xl md:text-4xl text-[#131737] font-bold">
           Conheça nossos serviços
         </h1>
-        <p className="text-xl font-medium text-[#6C6C6C] mt-2">
+        <p className="text-sm md:text-base font-medium text-[#6C6C6C] mt-2">
           Soluções pensadas para você.
         </p>
       </div>
