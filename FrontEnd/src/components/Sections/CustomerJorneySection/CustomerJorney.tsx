@@ -1,12 +1,6 @@
-"use client"
-
-import { useState, useEffect } from "react";
-import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
-
 import numberOne from "@/assets/images/icons/1.svg";
 import numberTwo from "@/assets/images/icons/2.svg";
 import numberThree from "@/assets/images/icons/3.svg";
-
 
 interface Step {
   src: string;
@@ -17,115 +11,55 @@ interface Step {
 const steps: Step[] = [
   {
     src: numberOne,
-    title: "Envio do formulário",
+    title: "Primeiro Contato",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In enim ante, alquam vel accumsan ac, ultricies quis turpis.",
+      "Após o agendamento pelo contato da página, realizamos uma reunião de diagnóstico para compreender seu negócio e definir as melhores formas de apoiá-lo.",
   },
   {
     src: numberTwo,
-    title: "Contato com o cliente",
+    title: "Contratação",
     description:
-      "Etiam iaculis vel neque vitae aliquam. Curabitur tincidunt ligula sit amet turpis facilisis molestie.",
+      "Com base no diagnóstico, elaboramos uma proposta personalizada e, após aprovação, formalizamos um contrato adequado ao seu negócio.",
   },
   {
     src: numberThree,
-    title: "Entrega ao cliente",
+    title: "Entrega do projeto",
     description:
-      "Vestibulum id justo tellus. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.",
+      "Por fim, você recebe um projeto de alto nível para levar sua empresa ao mundo! E ainda pedimos seu feedback para continuar entregando o melhor.",
   },
 ];
 
 export default function CustomerJourney() {
-  const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    if (!api) return;
-    
-    const handleSelect = () => {
-      setCurrent(api.selectedScrollSnap());
-    };
-
-    setCurrent(api.selectedScrollSnap());
-    api.on("select", handleSelect);
-
-    return () => {
-      api.off("select", handleSelect);
-    };
-  }, [api]);
-
   return (
-    <section className="w-full h-auto bg-dark-background text-primary-text flex flex-col items-center px-6 sm:py-56 py-32">
-      <h1 className="sm:text-5xl text-[2rem] font-bold text-center">
-        Jornada do Cliente
+    <section className="w-full h-auto bg-[#1a1d35] text-white flex flex-col items-center px-6 py-16 md:py-24">
+      <h1 className="text-3xl md:text-4xl font-semibold text-center mb-2">
+        Jornada do cliente
       </h1>
-      <p className="sm:text-2xl text-[1rem] py-2 text-center text-subtext">
+      <p className="text-sm md:text-base text-gray-300 text-center mb-12">
         Entenda como funciona nosso processo
       </p>
 
-      {/* DESKTOP */}
-
-      <div className="hidden lg:flex flex-row justify-between items-start w-[80%] max-w-6xl gap-8 pt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl gap-6">
         {steps.map((step, index) => (
-          <div 
-            key={`desktop-${index}`} 
-            className="flex-1 flex flex-col items-center max-w-md"
+          <div
+            key={`desktop-${index}`}
+            className="flex-1 flex flex-col items-center bg-white/10 border-3 border-white/25 rounded-lg py-8 px-6 backdrop-blur-sm"
           >
-            <img 
-              className="mb-8 w-16 h-16" 
-              src={step.src} 
-              alt={`Passo ${index + 1}: ${step.title}`} 
-            />
-            <h2 className="text-2xl font-medium mb-4 text-center">
+            <div className="w-12 h-12 rounded-full bg-[#3477DD] flex items-center justify-center text-white font-bold text-2xl mb-4">
+              {index + 1}
+            </div>
+
+            <h2 className="text-lg font-semibold mb-4 text-center">
               {step.title}
             </h2>
-            <p className="text-lg text-subtext text-justify">
+
+            <hr className="w-full border-[#6C6C6C] border-2 mb-4 rounded-full" />
+
+            <p className="text-sm text-gray-300 text-left leading-relaxed">
               {step.description}
             </p>
           </div>
         ))}
-      </div>
-
-      {/* MOBILE */}
-
-      <div className="lg:hidden w-full max-w-md mx-auto mt-8">
-        <Carousel setApi={setApi} className="w-full">
-          <CarouselContent>
-            {steps.map((step, index) => (
-              <CarouselItem
-                key={`mobile-${index}`}
-                className="flex flex-col items-center px-4 pb-8"
-              >
-                <img 
-                  className="mb-6 w-14 h-14" 
-                  src={step.src} 
-                  alt={`Passo ${index + 1}: ${step.title}`} 
-                />
-                <h2 className="text-2xl font-medium mb-4 text-center">
-                  {step.title}
-                </h2>
-                <p className="text-lg text-subtext text-justify">
-                  {step.description}
-                </p>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          
-          <div className="flex justify-center gap-2 mt-6">
-            {steps.map((_, index) => (
-              <button
-                key={`indicator-${index}`}
-                onClick={() => api?.scrollTo(index)}
-                className={`w-3 h-3 rounded-full transition-opacity ${
-                  current === index ? 'bg-white' : 'bg-white opacity-30'
-                }`}
-                aria-label={`Ir para o passo ${index + 1}`}
-                aria-current={current === index ? "true" : "false"}
-              />
-            ))}
-          </div>
-
-        </Carousel>
       </div>
     </section>
   );

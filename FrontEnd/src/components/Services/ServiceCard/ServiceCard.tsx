@@ -6,8 +6,8 @@
  * @property {string} title - Título/nome do serviço a ser exibido
  */
 type Service = {
-    src: string;
-    title: string;
+  src: string;
+  title: string;
 };
 
 /**
@@ -17,7 +17,7 @@ type Service = {
  * @property {Service} service - Objeto contendo os dados do serviço a ser exibido
  */
 type ServiceCardProps = {
-    service: Service;
+  service: Service;
 };
 
 /**
@@ -36,16 +36,19 @@ type ServiceCardProps = {
  * @returns {JSX.Element} O card do serviço renderizado
  */
 export default function ServiceCard({ service }: ServiceCardProps) {
-    return (
-        <div
-            className="w-full h-96 rounded-xl bg-cover bg-center flex justify-center items-center text-center p-4 transition-transform duration-300 ease-in-out hover:scale-105"
-            style={{
-                backgroundImage: `linear-gradient(rgba(25, 32, 89, 0.75), rgba(25, 32, 89, 0.75)), url(${service.src})`,
-            }}
-        >
-            <h3 className="font-bold text-2xl text-[#FAF1F1] drop-shadow-md">
-                {service.title}
-            </h3>
-        </div>
-    );
+  return (
+    <div
+      className="w-full h-96 rounded-xl bg-cover bg-center flex flex-col gap-6 justify-center items-center text-center p-4 transition-transform duration-300 ease-in-out sm:hover:scale-105"
+      style={{
+        backgroundImage: `linear-gradient(rgba(25, 32, 89, 0.75), rgba(25, 32, 89, 0.75)), url(${service.src})`,
+      }}
+    >
+      <h3 className="font-bold text-2xl text-[#FAF1F1] drop-shadow-md">
+        {service.title}
+      </h3>
+      <button className="block sm:hidden py-2 px-6 bg-blue-500 text-white font-semibold rounded-sm text-sm">
+        Saiba mais
+      </button>
+    </div>
+  );
 }
