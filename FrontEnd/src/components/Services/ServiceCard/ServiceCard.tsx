@@ -28,9 +28,9 @@ type ServiceCardProps = {
  * - Imagem de fundo com sobreposição escura para melhor legibilidade
  * - Texto centralizado e responsivo
  * - Efeito hover com aumento suave (scale-105)
+ * - Botão "Saiba mais" aparece no hover em desktop
  * - Altura fixa para consistência visual
  * - Bordas arredondadas e sombra para profundidade
-
  *
  * @param {ServiceCardProps} props - As propriedades do componente
  * @param {Service} props.service - Dados do serviço (imagem e título)
@@ -39,7 +39,7 @@ type ServiceCardProps = {
 export default function ServiceCard({ service }: ServiceCardProps) {
   return (
     <div
-      className="w-full h-96 rounded-xl bg-cover bg-center flex flex-col gap-6 justify-center items-center text-center p-4 transition-transform duration-300 ease-in-out sm:hover:scale-105"
+      className="group w-full h-96 rounded-xl bg-cover bg-center flex flex-col gap-6 justify-center items-center text-center p-4 transition-transform duration-300 ease-in-out sm:hover:scale-105"
       style={{
         backgroundImage: `linear-gradient(rgba(25, 32, 89, 0.75), rgba(25, 32, 89, 0.75)), url(${service.src})`,
       }}
@@ -47,9 +47,10 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       <h3 className="font-bold text-2xl text-[#FAF1F1] drop-shadow-md">
         {service.title}
       </h3>
+      
       <a
         href={service.href}
-        className="block sm:hidden py-2 px-6 bg-blue-500 text-white font-semibold rounded-sm text-sm"
+        className="py-2 px-6 bg-blue-500 text-white font-semibold rounded-sm text-sm transition-opacity duration-300 sm:opacity-0 sm:group-hover:opacity-100"
       >
         Saiba mais
       </a>

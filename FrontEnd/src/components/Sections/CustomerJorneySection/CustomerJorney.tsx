@@ -39,14 +39,16 @@ export default function CustomerJourney() {
         Entenda como funciona nosso processo
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 w-full max-w-7xl gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 w-full max-w-7xl gap-8 justify-items-center">
         {steps.map((step, index) => (
           <div
             key={`desktop-${index}`}
-            className="flex-1 flex flex-col items-center bg-white/10 border-3 border-white/25 rounded-lg py-8 px-6 backdrop-blur-sm"
+            className="flex-1 flex flex-col items-center bg-white/10 border-3 border-white/25 rounded-lg py-8 px-6 backdrop-blur-sm h-[436px] w-[362px] md:w-[400px] "
           >
-            <div className="w-12 h-12 rounded-full bg-[#3477DD] flex items-center justify-center text-white font-bold text-2xl mb-4">
-              {index + 1}
+            <div className="w-14 h-14 rounded-full bg-[#3477DD] flex items-center justify-center text-white font-medium text-5xl mb-4">
+              <p className="mb-0.5">
+                {index + 1}  
+              </p>
             </div>
 
             <h2 className="text-lg font-semibold mb-4 text-center">
