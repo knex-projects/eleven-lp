@@ -8,6 +8,9 @@ import { FullscreenLoading } from "@/components/ui/loading";
 import { useLoading } from "@/hooks/useLoading";
 import { useHashScroll } from "@/hooks/useHashScroll";
 
+import '@/assets/css/basic-elements/button/button.css'
+import '@/assets/css/basic-elements/search-box/search-box.css'
+
 function App() {
   const isLoading = useLoading();
 
