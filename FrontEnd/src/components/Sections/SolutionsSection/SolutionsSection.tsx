@@ -115,8 +115,8 @@ const solutionsData = [
 
 export default function SoluctionsSection() {
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 py-8 sm:py-12 md:py-16 md:px-[10%] max-sm:px-[6%] bg-background">
-            <div className="w-full max-w-7xl ">
+        <section className="w-full min-h-screen flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 py-8 sm:py-12 md:py-16 sm:px-[10%] max-sm:px-[6%] bg-background">
+            <div className="w-full max-w-[1152px] ">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F143B] mb-2 sm:mb-4">
                     Confira nossas soluções
                 </h1>
@@ -125,7 +125,7 @@ export default function SoluctionsSection() {
                 </p>
             </div>
 
-            <div className="w-full max-w-7xl ">
+            <div className="w-full max-w-[1152px] ">
                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6">
                     Tradução
                 </h3>

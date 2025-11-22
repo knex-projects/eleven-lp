@@ -10,7 +10,7 @@ export default function AboutSection() {
     backgroundImage: `linear-gradient(to right, rgba(19, 24, 69, 1), rgba(0,0,0,0.2)), url(${backgroundImage})`,
   }}
     >
-        <div className="max-sm:w-[88%]  relative max-sm:pt-[224px] max-2xl:max-w-[1150px] w-[80%]">
+        <div className="max-sm:w-[88%]  relative max-sm:pt-[224px] max-w-[1150px] w-[80%]">
           <h1 className="text-[48px] font-bold max-w-[572px]  w-[100%] max-lg:text-[40px] max-sm:text-[32px] ">
             Prazer, somos a Eleven Consultoria!
           </h1>
@@ -21,7 +21,7 @@ export default function AboutSection() {
           </h2>
         </div>
          <div className="mt-[20px] h-[300px] flex justify-center relative min-xl:hidden">
-          <img className="w-[300px] rotating" src={learnMoreIcon} alt="Saiba mais"/>
+          <img className="w-[300px] animate-[Rotating_5s_linear_infinite]" src={learnMoreIcon} alt="Saiba mais"/>
           <IoArrowDownSharp className="text-[50px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
         </div>
 

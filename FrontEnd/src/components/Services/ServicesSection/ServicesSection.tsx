@@ -132,13 +132,13 @@ export default function ServicesSection() {
 
         <div className="flex justify-center mt-4 space-x-2">
           {servicesData.map((_, index) => (
-            <button
+            <div
               key={index}
               onClick={() => api?.scrollTo(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 activeIndex === index
                   ? "bg-[#505050] scale-110"
-                  : "bg-[#E2E2E2]"
+                  : "bg-[#CFCFCF]"
               }`}
               aria-label={`Ir para o slide ${index + 1}`}
             />

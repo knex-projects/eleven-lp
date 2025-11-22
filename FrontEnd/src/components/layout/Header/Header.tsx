@@ -17,7 +17,7 @@ export default function Header({ page }: HeaderProps) {
     };
 
     return (
-        <section className="z-[1] w-screen backdrop-blur-lg bg-background-muted fixed top-0 grid justify-items-center content-center max-md:h-[104px] ">
+        <section className="z-[1] w-screen backdrop-blur-lg bg-background-muted absolute top-0 grid justify-items-center content-center max-md:h-[104px] ">
             <Link to={'/'}>
                 <img
                     src={logo}
@@ -28,7 +28,7 @@ export default function Header({ page }: HeaderProps) {
 
             <Popover open={isMenuOpen} onOpenChange={setIsMenuOpen}>
                 <PopoverTrigger
-                    className="absolute right-5 top-3 pb-2 min-md:hidden !bg-transparent"
+                    className="absolute right-5 top-7 pb-2 min-md:hidden !bg-transparent"
                     onClick={handleMenuToggle}
                 >
                     {isMenuOpen ? (
@@ -37,7 +37,7 @@ export default function Header({ page }: HeaderProps) {
                         <IoMenuSharp className="text-primary-text" size={48} />
                     )}
                 </PopoverTrigger>
-                <PopoverContent className="w-[100vw] min-[761px]:hidden backdrop-blur-lg bg-[#6C6C6C40] border-b-[1px] border-t-[1px] border-background-muted border-l-0 border-r-0 rounded-none text-primary-text text-center grid text-[24px] p-0">
+                <PopoverContent className="w-[100vw] min-[761px]:hidden  bg-[#fff] border-b-[1px] border-t-[1px] border-background-muted border-l-0 border-r-0 rounded-none text-[#333333] text-center grid text-[24px] p-0 rounded-b-[10px]">
                     <nav>
                         <h1 className="border-b-[1px] h-[52px] content-center border-background-muted">
                             <Link to="/" onClick={() => setIsMenuOpen(false)}>
