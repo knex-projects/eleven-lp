@@ -1,15 +1,15 @@
-import SolutionCard from '@/components/Solutions/SolutionCard';
+import SolutionCard from "@/components/Solutions/SolutionCard";
 import {
-    Languages,
-    Users,
-    BookImage,
-    GlobeIcon,
-    Building2,
-    Search,
-    Handshake,
-    LandPlot,
-    Map,
-} from 'lucide-react';
+  Languages,
+  Users,
+  BookImage,
+  GlobeIcon,
+  Building2,
+  Search,
+  Handshake,
+  LandPlot,
+  Map,
+} from "lucide-react";
 
 const solutionsData = [
     {
@@ -130,45 +130,56 @@ export default function SoluctionsSection() {
                     Tradução
                 </h3>
 
-                <div className="mb-6 sm:mb-8 md:mb-10">
-                    <SolutionCard solution={solutionsData[0]} />
-                </div>
+        <div className="mb-6 sm:mb-8 md:mb-10">
+          <SolutionCard solution={solutionsData[0]} />
+        </div>
 
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12">
-                    Consultoria Internacional
-                </h3>
+        <h3
+          id="consultoria-internacional"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
+        >
+          Consultoria Internacional
+        </h3>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-                    <SolutionCard solution={solutionsData[1]} />
-                    <SolutionCard solution={solutionsData[2]} />
-                </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <SolutionCard solution={solutionsData[1]} />
+          <SolutionCard solution={solutionsData[2]} />
+        </div>
 
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12">
-                    Estudo mercadológico
-                </h3>
-                <div className="mb-6 sm:mb-8 md:mb-10">
-                    <SolutionCard solution={solutionsData[3]} />
-                </div>
-                <div className="mb-6 sm:mb-8 md:mb-10">
-                    <SolutionCard solution={solutionsData[4]} />
-                </div>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-                    <SolutionCard solution={solutionsData[5]} />
-                    <SolutionCard solution={solutionsData[6]} />
-                </div>
+        <h3
+          id="estudo-de-mercado"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
+        >
+          Estudo mercadológico
+        </h3>
+        <div className="mb-6 sm:mb-8 md:mb-10">
+          <SolutionCard solution={solutionsData[3]} />
+        </div>
+        <div id="estudo-de-concorrencia" className="mb-6 sm:mb-8 md:mb-10">
+          <SolutionCard solution={solutionsData[4]} />
+        </div>
+        <div
+          id="estudo-de-fornecedores"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8"
+        >
+          <SolutionCard solution={solutionsData[5]} />
+          <SolutionCard solution={solutionsData[6]} />
+        </div>
 
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12">
-                    Internacionalização e mapeamento
-                </h3>
+        <h3
+          id="internacionalizacao-e-mapeamento"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
+        >
+          Internacionalização e mapeamento
+        </h3>
+        <div id="consultoria-internacional" className="mb-6 sm:mb-8 md:mb-10">
+          <SolutionCard solution={solutionsData[7]} />
+        </div>
 
-                <div className="mb-6 sm:mb-8 md:mb-10">
-                    <SolutionCard solution={solutionsData[7]} />
-                </div>
-
-                <div className="mb-6 sm:mb-8 md:mb-10">
-                    <SolutionCard solution={solutionsData[8]} />
-                </div>
-            </div>
-        </section>
-    );
+        <div id="mapeamento-de-feiras" className="mb-6 sm:mb-8 md:mb-10">
+          <SolutionCard solution={solutionsData[8]} />
+        </div>
+      </div>
+    </section>
+  );
 }
