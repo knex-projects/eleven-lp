@@ -76,14 +76,7 @@ export default function Header({ page }: HeaderProps) {
                                 Cases
                             </Link>
                         </h1>
-                        <h1 className="border-b-[1px] h-[52px] content-center border-background-muted">
-                            <Link
-                                to="/Blog"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Blog
-                            </Link>
-                        </h1>
+                      
                     </nav>
                 </PopoverContent>
             </Popover>
@@ -140,16 +133,7 @@ export default function Header({ page }: HeaderProps) {
                             } group-hover:bg-white`}
                         ></div>
                     </h1>
-                    <h1 className="group">
-                        <Link to="/Blog">Blog</Link>
-                        <div
-                            className={`h-[2px] w-[0%] bg-blue-400 ${
-                                page === 'Blog'
-                                    ? 'w-[100%]'
-                                    : 'animate-[growRightToLeft_0.3s_ease-in-out_alternate] group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]'
-                            } group-hover:bg-white`}
-                        ></div>
-                    </h1>
+                  
                 </div>
             </nav>
         </section>

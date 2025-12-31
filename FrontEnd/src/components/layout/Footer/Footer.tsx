@@ -35,9 +35,9 @@ export default function Footer() {
               Parceiros
             </h1>
             <li>
-              <Link to={"https://elevenjr.com/parceiros"}>
+              <a href="/Materiais#Material">
                 Venha ser um Parceiro
-              </Link>
+              </a>
             </li>
           </div>
         </ul>
@@ -47,21 +47,15 @@ export default function Footer() {
             Materiais Gratuitos
           </h1>
           <li>
-            <Link to={"https://app.pipefy.com/public/form/jF1D6Crr"}>
-              Guia para emissão de passaporte
-            </Link>
+            <a href="/Materiais#Material" >
+             Manual do congressista
+            </a>
           </li>{" "}
           {/*TODO: Add link*/}
           <li>
-            <Link to={"https://app.pipefy.com/public/form/WC4mdOH9"}>
-              Guia de Sobrevivência em João Pessoa
-            </Link>
-          </li>{" "}
-          {/*TODO: Add link*/}
-          <li>
-            <Link to={"https://app.pipefy.com/public/form/FsIs4HrM"}>
-              Manual de Exportação
-            </Link>
+            <a href="/Materiais#Material" >
+             Capacitação LinkedIn
+            </a>
           </li>{" "}
           {/*TODO: Add link*/}
         </ul>
@@ -83,23 +77,16 @@ export default function Footer() {
             Parceiros
           </h1>
           <li>
-            <Link to={"https://elevenjr.com/parceiros"}>
+            <a href="/#Form">
               Venha ser um Parceiro
-            </Link>
-          </li>
-        </ul>
-
-        <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
-          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Blog</h1>
-          <li>
-            <Link to={"https://elevenjr.com/blog"}>Conheça nosso Blog</Link>
+            </a>
           </li>
         </ul>
 
         <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
           <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Cases</h1>
           <li>
-            <Link to={"https://elevenjr.com/cases"}>Veja nossos cases</Link>
+            <a   href="/Cases#Cases">Veja nossos cases</a>
           </li>
         </ul>
       </div>

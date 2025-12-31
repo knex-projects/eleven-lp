@@ -16,10 +16,12 @@ export default function HeroSection() {
         <h2 className="text-primary-text text-[24px] font-normal pt-10 py-25 max-md:w-[75%] max-md:text-[18px] max-md:font-normal">
           Descubra como nossas soluções elevam os seus resultados!
         </h2>
-
-        <button className="w-[325px] h-[64px] text-[24px] rounded-[10px] max-sm:w-[80%]">
+        <a href="/#Form" className="scroll-smooth">
+          <button className="scroll-smooth w-[325px] h-[64px] text-[24px] rounded-[10px] max-sm:w-[80%]">
           <h1>Fale com um consultor</h1>
         </button>
+        </a>
+        
       </section>
   );
 }
