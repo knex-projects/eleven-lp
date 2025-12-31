@@ -2,33 +2,25 @@ import { IoArrowDownSharp } from 'react-icons/io5';
 import background from '../../../assets/images/backgrounds/sections/cases.png';
 import learnMoreIcon from '@/assets/images/icons/learn-more.png';
 import CaseCard from '@/components/Cases/CaseCard';
+import LogoCase1 from '@/assets/images/backgrounds/cases-cards/originariumLogo.svg'
+import LogoCase2 from '@/assets/images/backgrounds/cases-cards/ejudi.svg'
 
-/**
- * Dados dos cases de sucesso.
- * Adicionar os cases reais posteriormente
- */
 const casesData = [
     {
-        title: 'Case 1',
+        title: 'Originarium',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
-        image: '',
+            'Realizamos sua Análise de Viabilidade Internacional (AVI), mapeando mercados e investigando todas as exigências legais e regulatórias para seus produtos. Entregando um roadmap com o mercado-alvo prioritário.',
+        image: LogoCase1,
         link: '#',
     },
     {
-        title: 'Case 2',
+        title: 'Ejudi',
         description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
-        image: '',
+            'Nós  realizamos a tradução especializada do Contrato de Afiliação, Política  de Privacidade e Termos de Uso, garantindo que todos os termos jurídicos técnicos fossem adaptados corretamente.',
+        image: LogoCase2,
         link: '#',
     },
-    {
-        title: 'Case 3',
-        description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.',
-        image: '',
-        link: '#',
-    },
+  
 ];
 
 export default function CasesSection() {
@@ -64,7 +56,7 @@ export default function CasesSection() {
                 </div>
             </div>
 
-            <section className="w-full min-h-screen flex flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20 py-12 sm:py-16 md:py-20 bg-background px-4 sm:px-6 lg:px-8">
+            <section id='Cases' className="w-full min-h-screen flex flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20 py-12 sm:py-16 md:py-20 bg-background px-4 sm:px-6 lg:px-8">
                 {casesData.map((caseItem, index) => (
                     <CaseCard key={index} caseData={caseItem} />
                 ))}
