@@ -17,8 +17,8 @@ export default function HeroSection() {
           Descubra como nossas soluções elevam os seus resultados!
         </h2>
         <a href="/#Form" className="scroll-smooth">
-          <button className="scroll-smooth w-[325px] h-[64px] text-[24px] rounded-[10px] max-sm:w-[80%]">
-          <h1>Fale com um consultor</h1>
+          <button className="scroll-smooth w-[325px] h-[64px] text-[24px] rounded-[10px] max-sm:w-[80vw] max-sm:max-w-[267px]">
+          <h1>Entrar em contato</h1>
         </button>
         </a>
         
