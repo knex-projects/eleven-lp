@@ -147,7 +147,7 @@ useEffect(() => {
 
             <div className="w-full max-w-[1152px] ">
                 <h3 id="Traducao" tabIndex={-1} className="focus:relative scroll-mt-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6">
-                    <img src={arrow} className=" absolute -left-10 top-1 "/>
+                    <img src={arrow} className=" absolute -left-10  max-sm:-top-2 "/>
                     Tradução
                 </h3>
 
@@ -159,7 +159,7 @@ useEffect(() => {
           id="consultoria-internacional" tabIndex={-1}
           className="focus:relative scroll-mt-10  text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
         >
-          <img src={arrow} className=" absolute -left-10  "/>
+          <img src={arrow} className=" absolute -left-10  max-sm:-top-2 "/>
           Consultoria Internacional
         </h3>
 
@@ -172,7 +172,7 @@ useEffect(() => {
           id="estudo-de-mercado" tabIndex={-1}
           className="focus:relative scroll-mt-10  sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
         >
-          <img src={arrow} className=" absolute -left-10  "/>
+          <img src={arrow} className=" absolute -left-10  max-sm:-top-2 "/>
           Estudo mercadológico
         </h3>
         <div className="mb-6 sm:mb-8 md:mb-10">
@@ -195,7 +195,7 @@ useEffect(() => {
           id="internacionalizacao-e-mapeamento"  tabIndex={-1}
           className="focus:relative scroll-mt-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
         >
-          <img src={arrow} tabIndex={-1} className=" absolute -left-10  "/>
+          <img src={arrow} tabIndex={-1} className=" absolute -left-10  max-sm:-top-2"/>
           Internacionalização e mapeamento
         </h3>
         <div id="consultoria-internacional" tabIndex={-1} className="focus:relative scroll-mt-10  mb-6 sm:mb-8 md:mb-10">
