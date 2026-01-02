@@ -134,7 +134,7 @@ export default function ConsultForm() {
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="bg-background text-dark-text px-8 py-10 rounded-lg space-y-6 max-w-[512px]"
+            className="bg-[#FFFFFF] text-dark-text px-8 py-10 rounded-lg space-y-6 max-w-[512px]"
           >
             <h1 className="font-bold text-2xl text-center w-full p-0">
               Agende uma conversa!
@@ -148,7 +148,7 @@ export default function ConsultForm() {
                 <FormItem>
                   <FormLabel>Empresa</FormLabel>
                   <FormControl>
-                    <Input placeholder="Nome da sua empresa" {...field} />
+                    <Input className="bg-[#F0F0F0]" placeholder="Nome da sua empresa" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -163,7 +163,7 @@ export default function ConsultForm() {
                 <FormItem>
                   <FormLabel>Representante</FormLabel>
                   <FormControl>
-                    <Input placeholder="Seu nome completo" {...field} />
+                    <Input className="bg-[#F0F0F0]" placeholder="Seu nome completo" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -178,7 +178,7 @@ export default function ConsultForm() {
                 <FormItem>
                   <FormLabel>Email</FormLabel>
                   <FormControl>
-                    <Input placeholder="seu@email.com" {...field} />
+                    <Input className="bg-[#F0F0F0]" placeholder="seu@email.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -193,7 +193,7 @@ export default function ConsultForm() {
                 <FormItem>
                   <FormLabel>Telefone</FormLabel>
                   <FormControl>
-                    <Input placeholder="(00) 00000-0000" {...field} />
+                    <Input className="bg-[#F0F0F0]" placeholder="(00) 00000-0000" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -209,6 +209,7 @@ export default function ConsultForm() {
                   <FormLabel>Mensagem</FormLabel>
                   <FormControl>
                     <Textarea
+                    className="resize-none h-[82px] bg-[#F0F0F0]"
                       placeholder="Escreva sua mensagem aqui..."
                       rows={5}
                       {...field}
