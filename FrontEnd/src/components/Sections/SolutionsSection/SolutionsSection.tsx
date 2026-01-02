@@ -10,6 +10,9 @@ import {
   LandPlot,
   Map,
 } from "lucide-react";
+import { useEffect } from "react";
+import arrow from "@/assets/images/icons/arrow.svg"
+
 
 const solutionsData = [
     {
@@ -114,6 +117,23 @@ const solutionsData = [
 ];
 
 export default function SoluctionsSection() {
+useEffect(() => {
+    // Verifica se há um ID na URL (ex: /pagina#minha-secao)
+    const hash = window.location.hash;
+    
+    if (hash) {
+      // Tenta encontrar o elemento pelo ID
+      const element = document.querySelector(hash) as HTMLElement;
+      
+      if (element) {
+        // Pequeno delay opcional para garantir que o scroll terminou
+        setTimeout(() => {
+          element.focus();
+        }, 100);
+      }
+    }
+  }, []);
+
     return (
         <section className="w-full min-h-screen flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 py-8 sm:py-12 md:py-16 sm:px-[10%] max-sm:px-[6%] bg-background">
             <div className="w-full max-w-[1152px] ">
@@ -126,7 +146,8 @@ export default function SoluctionsSection() {
             </div>
 
             <div className="w-full max-w-[1152px] ">
-                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6">
+                <h3 id="Traducao" tabIndex={-1} className="focus:relative scroll-mt-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6">
+                    <img src={arrow} className=" absolute -left-10 top-1 "/>
                     Tradução
                 </h3>
 
@@ -135,9 +156,10 @@ export default function SoluctionsSection() {
         </div>
 
         <h3
-          id="consultoria-internacional"
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
+          id="consultoria-internacional" tabIndex={-1}
+          className="focus:relative scroll-mt-10  text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
         >
+          <img src={arrow} className=" absolute -left-10  "/>
           Consultoria Internacional
         </h3>
 
@@ -145,38 +167,44 @@ export default function SoluctionsSection() {
           <SolutionCard solution={solutionsData[1]} />
           <SolutionCard solution={solutionsData[2]} />
         </div>
-
+        <div></div>
         <h3
-          id="estudo-de-mercado"
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
+          id="estudo-de-mercado" tabIndex={-1}
+          className="focus:relative scroll-mt-10  sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
         >
+          <img src={arrow} className=" absolute -left-10  "/>
           Estudo mercadológico
         </h3>
         <div className="mb-6 sm:mb-8 md:mb-10">
           <SolutionCard solution={solutionsData[3]} />
         </div>
-        <div id="estudo-de-concorrencia" className="mb-6 sm:mb-8 md:mb-10">
+        <div id="estudo-de-concorrencia" tabIndex={-1} className="focus:relative scroll-mt-10  mb-6 sm:mb-8 md:mb-10">
+          <img src={arrow} className=" absolute -left-10 top-1 "/>
           <SolutionCard solution={solutionsData[4]} />
         </div>
         <div
-          id="estudo-de-fornecedores"
-          className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8"
+          id="estudo-de-fornecedores" tabIndex={-1}
+          className="focus:relative scroll-mt-10  grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8"
         >
+          <img src={arrow} tabIndex={-1} className=" absolute -left-10 top-1 "/>
           <SolutionCard solution={solutionsData[5]} />
           <SolutionCard solution={solutionsData[6]} />
         </div>
 
         <h3
-          id="internacionalizacao-e-mapeamento"
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
+          id="internacionalizacao-e-mapeamento"  tabIndex={-1}
+          className="focus:relative scroll-mt-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#0f143b] mb-4 sm:mb-6 mt-8 sm:mt-10 md:mt-12"
         >
+          <img src={arrow} tabIndex={-1} className=" absolute -left-10  "/>
           Internacionalização e mapeamento
         </h3>
-        <div id="consultoria-internacional" className="mb-6 sm:mb-8 md:mb-10">
+        <div id="consultoria-internacional" tabIndex={-1} className="focus:relative scroll-mt-10  mb-6 sm:mb-8 md:mb-10">
+          <img src={arrow} tabIndex={-1} className=" absolute -left-10 top-1 "/>
           <SolutionCard solution={solutionsData[7]} />
         </div>
 
-        <div id="mapeamento-de-feiras" className="mb-6 sm:mb-8 md:mb-10">
+        <div id="mapeamento-de-feiras" tabIndex={-1} className="focus:relative scroll-mt-10  mb-6 sm:mb-8 md:mb-10">
+          <img src={arrow} tabIndex={-1} className=" absolute -left-10 top-1 "/>
           <SolutionCard solution={solutionsData[8]} />
         </div>
       </div>
