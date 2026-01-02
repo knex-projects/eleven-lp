@@ -17,7 +17,7 @@ export default function Header({ page }: HeaderProps) {
     };
 
     return (
-        <section className="z-[1] w-screen backdrop-blur-lg bg-background-muted absolute top-0 grid justify-items-center content-center max-md:h-[104px] ">
+        <section className="z-[1] w-full backdrop-blur-lg bg-background-muted absolute top-0 grid justify-items-center content-center max-md:h-[104px] ">
             <Link to={'/'}>
                 <img
                     src={logo}
@@ -82,7 +82,7 @@ export default function Header({ page }: HeaderProps) {
             </Popover>
 
             <nav>
-                <div className="border-b-[1px] border-t-[1px] border-background-muted w-screen h-[46px] justify-center items-center flex gap-13 text-primary-text text-[24px] font-normal max-[644px]:absolute max-[760px]:hidden max-[1000px]:text-[2.5vw] max-[1000px]:gap-10">
+                <div className="border-b-[1px] border-t-[1px] border-background-muted w-full h-[46px] justify-center items-center flex gap-13 text-primary-text text-[24px] font-normal max-[644px]:absolute max-[760px]:hidden max-[1000px]:text-[2.5vw] max-[1000px]:gap-10">
                     <h1 className="group">
                         <Link to="/">Home</Link>
                         <div

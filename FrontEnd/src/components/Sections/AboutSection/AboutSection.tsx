@@ -5,7 +5,7 @@ import learnMoreIcon from "@/assets/images/icons/learn-more.png"
 export default function AboutSection() {
   return (
 	<section
-        className="w-screen h-[870px] bg-cover  flex flex-col items-center max-lg:flex-col justify-center pt-20 text-primary-text bg-center max-md:pt-0 max-sm:h-[745px]"
+        className="w-full h-[870px] bg-cover  flex flex-col items-center max-lg:flex-col justify-center pt-20 text-primary-text bg-center max-md:pt-0 max-sm:h-[745px]"
         style={{
     backgroundImage: `linear-gradient(to right, rgba(19, 24, 69, 1), rgba(0,0,0,0.2)), url(${backgroundImage})`,
   }}
