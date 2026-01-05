@@ -178,15 +178,15 @@ useEffect(() => {
         <div className="mb-6 sm:mb-8 md:mb-10">
           <SolutionCard solution={solutionsData[3]} />
         </div>
-        <div id="estudo-de-concorrencia" tabIndex={-1} className="focus:relative scroll-mt-10  mb-6 sm:mb-8 md:mb-10">
-          <img src={arrow} className=" absolute -left-10 top-1 "/>
+        <div id="estudo-de-concorrencia" tabIndex={-1} className="focus:relative -scroll-mt-[23vw] max-lg:-scroll-mt-[30vw]   mb-6 sm:mb-8 md:mb-10">
+          <img src={arrow} className=" absolute -left-10 -bottom-20 "/>
           <SolutionCard solution={solutionsData[4]} />
         </div>
         <div
           id="estudo-de-fornecedores" tabIndex={-1}
-          className="focus:relative scroll-mt-10  grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8"
+          className="focus:relative scroll-mt-10 max-lg:-scroll-mt-40  grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8"
         >
-          <img src={arrow} tabIndex={-1} className=" absolute -left-10 top-1 "/>
+          <img src={arrow} tabIndex={-1} className=" absolute lg:rotate-180 -right-10 max-lg:-left-10 top-1 max-lg:top-[55%] "/>
           <SolutionCard solution={solutionsData[5]} />
           <SolutionCard solution={solutionsData[6]} />
         </div>
