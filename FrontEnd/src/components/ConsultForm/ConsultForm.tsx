@@ -74,7 +74,7 @@ export default function ConsultForm() {
 
     try {
       const response = await axios.post(
-        "https://formsubmit.co/annielyms.knex@gmail.com", // Alterar email pra não ser o meu.
+        "https://formsubmit.co/vendas.elevenjr@gmail.com", 
         {
           ...data,
           _subject: "Novo contato do site Eleven",
