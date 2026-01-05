@@ -2,7 +2,7 @@ import logoImg from "@/assets/images/logos/eleven-big-logo.svg";
 
 export default function HistorySection() {
   return (
-    <section className="w-screen my-[85.5px] max-sm:my-[40px]  bg-background justify-center  flex items-center  ">
+    <section className="w-full my-[85.5px] max-sm:my-[40px]  bg-background justify-center  flex items-center  ">
       <div className="flex xl:justify-between justify-center max-sm:w-[88vw] w-[80vw] max-w-[1152px]   max-xl:flex-col-reverse xl:flex-row">
         <div className="flex   items-center justify-center">
           <img

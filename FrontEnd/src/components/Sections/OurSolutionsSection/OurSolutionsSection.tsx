@@ -5,7 +5,7 @@ import { IoArrowDownSharp } from "react-icons/io5";
 export default function OurSolutionsSection() {
   return (
 	<section
-        className="w-screen h-[870px] flex bg-cover gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-primary-text bg-center max-md:pt-0 max-sm:h-[745px]"
+        className="w-full h-[870px] flex bg-cover gap-28 max-xl:gap-20 items-center max-lg:flex-col justify-center pt-20 text-primary-text bg-center max-md:pt-0 max-sm:h-[745px]"
         style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="mt-[120px] max-sm:w-[88%] max-sm:mt-[220px] w-[80vw] max-w-[1152px] ">

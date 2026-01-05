@@ -44,7 +44,7 @@ const servicesData = [
     title: "Mapeamento de feiras",
     href: "/Solucoes#mapeamento-de-feiras",
   },
-  { src: service7Background, title: "Traduções", href: "/Solucoes#traducao" },
+  { src: service7Background, title: "Traduções", href: "/Solucoes#Traducao" },
   {
     src: service8Background,
     title: "Consultoria Internacional",

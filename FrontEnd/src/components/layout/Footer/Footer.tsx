@@ -1,111 +1,70 @@
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaSquareXTwitter } from "react-icons/fa6"; //Ainda não tem o logo X no Io5
+import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import logo from "@/assets/images/logos/eleven-logo.svg";
 import "@/assets/css/footer/footer.css";
 
 export default function Footer() {
   return (
-    <footer className="text-primary-text lg:px-[8.8%]  max-sm:px-[6%] max-sm:pt-16 px-12 pt-24 bg-footer-background h-full">
-      <div className="flex flex-wrap flex-col sm:flex-row text-muted-subtext items-start justify-center">
-        <ul className="min-w-50 m-2.5 flex gap-3">
-          <div>
-            <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
-              Fale conosco
-            </h1>
-            <li>
-              <Link to={"https://wa.me/5521975922237"}>
-                +55 (21) 97592-2237
-              </Link>
-            </li>
-            <li>
-              <Link to={"ElevenJr.com.br"}>ElevenJr.com.br</Link>
-            </li>
-            <li>
-              <Link to={"mailto:vendas.elevenjr@gmail.com"}>
-                vendas.elevenjr@gmail.com
-              </Link>
-            </li>
+    <footer className="text-primary-text lg:px-[8.8%] max-sm:px-[6%] max-sm:pt-16 px-12 pt-24 bg-footer-background h-full">
+      <div className="py-8 flex flex-wrap gap-16 gap-y-12 lg:justify-center ">
+        <div className="*:block">
+          <h1 className="text-primary-text font-bold mb-4">Fale Conosco</h1>
+          <div className="*:block text-[#898989] text-lg">
+            <Link target="_blank" to={"https://wa.me/5521975922237"}>
+              +55 (21) 97592-2237
+            </Link>
+            <Link target="_blank" to={"mailto:vendas.elevenjr@gmail.com"}>
+              vendas.elevenjr@gmail.com
+            </Link>
           </div>
-
-          <div className="flex-auto sm:hidden">
-            <h1 className=" text-primary-text mb-2.5 text-[1.125rem]">
-              Parceiros
-            </h1>
-            <li>
-              <Link to={"https://elevenjr.com/parceiros"}>
-                Venha ser um Parceiro
-              </Link>
-            </li>
-          </div>
-        </ul>
-
-        <ul className="min-w-50 m-2.5 flex-auto pb-5">
-          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
+        </div>
+        <div>
+          <h1 className="text-primary-text font-bold mb-4">
             Materiais Gratuitos
           </h1>
-          <li>
-            <Link to={"https://app.pipefy.com/public/form/jF1D6Crr"}>
-              Guia para emissão de passaporte
-            </Link>
-          </li>{" "}
-          {/*TODO: Add link*/}
-          <li>
-            <Link to={"https://app.pipefy.com/public/form/WC4mdOH9"}>
-              Guia de Sobrevivência em João Pessoa
-            </Link>
-          </li>{" "}
-          {/*TODO: Add link*/}
-          <li>
-            <Link to={"https://app.pipefy.com/public/form/FsIs4HrM"}>
-              Manual de Exportação
-            </Link>
-          </li>{" "}
-          {/*TODO: Add link*/}
-        </ul>
-
-        <ul className="min-w-50 m-2.5 flex-auto">
-          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
-            Nossa localização
+          <div className="*:block text-[#898989]">
+            <a target="_blank" href="/Materiais#Material">
+              Manual do Congressista
+            </a>
+            <a target="_blank" href="/Materiais#Material">
+              Capacitação de Linkedin
+            </a>
+          </div>
+        </div>
+        <div>
+          <h1 className="text-primary-text font-bold mb-4">
+            Nossa Localização
           </h1>
-          <li>
-            <Link to={"https://maps.app.goo.gl/z9Qb3vLRjimrj7M36"}>
+          <div className="*:block text-[#898989]">
+            <Link
+              target="_blank"
+              to={"https://maps.app.goo.gl/z9Qb3vLRjimrj7M36"}
+            >
               Rua Horácio Trajano de Oliveira
               <br /> João Pessoa - PB 58071-470, BR
             </Link>
-          </li>
-        </ul>
-
-        <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
-          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">
-            Parceiros
-          </h1>
-          <li>
-            <Link to={"https://elevenjr.com/parceiros"}>
-              Venha ser um Parceiro
-            </Link>
-          </li>
-        </ul>
-
-        <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
-          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Blog</h1>
-          <li>
-            <Link to={"https://elevenjr.com/blog"}>Conheça nosso Blog</Link>
-          </li>
-        </ul>
-
-        <ul className="min-w-50 m-2.5 flex-auto max-sm:hidden">
-          <h1 className="text-primary-text mb-2.5 text-[1.125rem]">Cases</h1>
-          <li>
-            <Link to={"https://elevenjr.com/cases"}>Veja nossos cases</Link>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div>
+          <h1 className="text-primary-text font-bold mb-4">Parceiros</h1>
+          <div className="*:block text-[#898989]">
+            <a href="/#Form">Venha ser um Parceiro</a>
+          </div>
+        </div>
+        <div>
+          <h1 className="text-primary-text font-bold mb-4">Cases</h1>
+          <div className="*:block text-[#898989]">
+            <a href="/Cases#Cases">Veja nossos cases</a>
+          </div>
+        </div>
       </div>
-      <hr className="mt-10 opacity-50 " />
 
-      <div className="footer-social-medias py-6 gap-5 flex flex-col lg:flex-row items-center justify-between">
+      <hr className="mt-10 opacity-10 " />
+
+      <div className="footer-social-medias py-12 gap-5 flex flex-col lg:flex-row items-center justify-between">
         <Link to={"/"} className="logo-with-name">
           <img src={logo}></img>
           <h1 className="text-2xl">Eleven Jr</h1>

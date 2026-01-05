@@ -19,7 +19,7 @@ function FreeMaterialCard({ image, name, description, download }: CardInfoProps)
   }
 
   return(
-    <div className="w-full h-[420px] p-[15px] rounded-[14px] bg-background">
+    <div id="Material" className="scroll-mt-20 w-full h-[420px] p-[15px] rounded-[14px] bg-background">
       <div className="w-full h-[220px] bg-cover bg-center rounded-[7px]" style={{ backgroundImage: `url(${image})`}}></div>
       <div className="h-[125px]">
         <h1 className="text-dark-text w-full max-h-[50px] overflow-y-auto break-words font-bold mt-[5px]">{name}</h1>
