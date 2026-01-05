@@ -89,7 +89,7 @@ export default function Header({ page }: HeaderProps) {
                             className={`h-[2px] w-[0%] bg-blue-400 ${
                                 page === 'home'
                                     ? 'w-[100%]'
-                                    : 'animate-[growRightToLeft_1s_ease-in-out_alternate] group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]'
+                                    : 'animate-[growRightToLeft_0.3s_ease-in-out_alternate] group-hover:animate-[growLeftToRight_0.3s_ease-in_forwards]'
                             } group-hover:bg-white`}
                         ></div>
                     </h1>
