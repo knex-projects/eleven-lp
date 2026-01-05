@@ -11,12 +11,6 @@ type CaseCardProps = {
 
 
 export default function CaseCard({ caseData }: CaseCardProps) {
-    const handleLearnMore = () => {
-        if (caseData.link) {
-            window.open(caseData.link, '_blank');
-        }
-    };
-
     return (
         <div
             className={`w-[88%] max-w-[1152px] flex flex-col items-center lg:flex-row max-sm:gap-2 gap-6 lg:gap-8 overflow-hidden`}
