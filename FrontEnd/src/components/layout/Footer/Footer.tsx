@@ -72,18 +72,21 @@ export default function Footer() {
 
         <div className="social-medias gap-2">
           <Link
+            target="_blank"
             className="media-icon mr-2"
             to={"https://www.instagram.com/elevenjr/"}
           >
             <IoLogoInstagram />
           </Link>
           <Link
+            target="_blank"
             className="media-icon mr-2"
             to={"https://www.facebook.com/elevenjunior"}
           >
             <IoLogoFacebook />
           </Link>
           <Link
+            target="_blank"
             className="media-icon mr-2"
             to={
               "https://www.linkedin.com/company/eleven-jr?originalSubdomain=br"
@@ -91,7 +94,9 @@ export default function Footer() {
           >
             <IoLogoLinkedin />
           </Link>
-          <Link className="media-icon" to={"https://twitter.com/elevenjr_"}>
+          <Link
+            target="_blank" 
+          className="media-icon" to={"https://twitter.com/elevenjr_"}>
             <FaSquareXTwitter />
           </Link>
         </div>
