@@ -26,12 +26,12 @@ export default function Footer() {
             Materiais Gratuitos
           </h1>
           <div className="*:block text-[#898989]">
-            <a target="_blank" href="/Materiais#Material">
+            <Link  to="/Materiais#Material">
               Manual do Congressista
-            </a>
-            <a target="_blank" href="/Materiais#Material">
+            </Link>
+            <Link to="/Materiais#Material">
               Capacitação de Linkedin
-            </a>
+            </Link>
           </div>
         </div>
         <div>
@@ -51,13 +51,13 @@ export default function Footer() {
         <div>
           <h1 className="text-primary-text font-bold mb-4">Parceiros</h1>
           <div className="*:block text-[#898989]">
-            <a href="/#Form">Venha ser um Parceiro</a>
+            <Link to="/#Form">Venha ser um Parceiro</Link>
           </div>
         </div>
         <div>
           <h1 className="text-primary-text font-bold mb-4">Cases</h1>
           <div className="*:block text-[#898989]">
-            <a href="/Cases#Cases">Veja nossos cases</a>
+            <Link to="/Cases#Cases">Veja nossos cases</Link>
           </div>
         </div>
       </div>
