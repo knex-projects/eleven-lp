@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 /**
  * Tipo que define a estrutura de dados de um serviço.
  *
@@ -47,13 +49,12 @@ export default function ServiceCard({ service }: ServiceCardProps) {
       <h3 className="font-bold text-2xl text-[#FAF1F1] drop-shadow-md">
         {service.title}
       </h3>
-      
-      <a
-        href={service.href}
+        <Link
+        to={service.href}
         className="py-2 px-6 bg-blue-500 text-white font-semibold rounded-sm text-sm transition-opacity duration-300 sm:opacity-0 sm:group-hover:opacity-100"
       >
         Saiba mais
-      </a>
+      </Link>
     </div>
   );
 }
