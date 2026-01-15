@@ -13,11 +13,11 @@ export default function Footer() {
         <div className="*:block">
           <h1 className="text-primary-text font-bold mb-4">Fale Conosco</h1>
           <div className="*:block text-[#898989] text-lg">
-            <Link target="_blank" to={"https://wa.me/5521975922237"}>
-              +55 (21) 97592-2237
+            <Link target="_blank" to={"https://wa.me/5583991074221"}>
+              +55 (83) 99107-4221
             </Link>
-            <Link target="_blank" to={"mailto:vendas.elevenjr@gmail.com"}>
-              vendas.elevenjr@gmail.com
+            <Link target="_blank" to={"mailto:contact.elevenjr@gmail.com"}>
+              contact.elevenjr@gmail.com
             </Link>
           </div>
         </div>
