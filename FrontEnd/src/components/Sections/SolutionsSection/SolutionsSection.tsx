@@ -135,7 +135,7 @@ useEffect(() => {
   }, []);
 
     return (
-        <section className="w-full min-h-screen flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 py-8 sm:py-12 md:py-16 sm:px-[10%] max-sm:px-[6%] bg-background">
+        <section className="relative overflow-hidden w-full min-h-screen flex flex-col items-center  justify-center gap-6 sm:gap-8 md:gap-10 py-8 sm:py-12 md:py-16 sm:px-[10%] max-sm:px-[6%] bg-background">
             <div className="w-full max-w-[1152px] ">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0F143B] mb-2 sm:mb-4">
                     Confira nossas soluções
@@ -186,7 +186,7 @@ useEffect(() => {
           id="estudo-de-fornecedores" tabIndex={-1}
           className="focus:relative scroll-mt-10 max-lg:-scroll-mt-40  grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8"
         >
-          <img src={arrow} tabIndex={-1} className=" absolute lg:rotate-180 -right-10 max-lg:-left-10 top-1 max-lg:top-[55%] "/>
+          <img src={arrow} className=" absolute lg:rotate-180 -right-10 max-lg:-left-10 top-1 max-lg:top-[55%] "/>
           <SolutionCard solution={solutionsData[5]} />
           <SolutionCard solution={solutionsData[6]} />
         </div>
