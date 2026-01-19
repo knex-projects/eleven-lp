@@ -5,10 +5,7 @@ import {
   BookImage,
   GlobeIcon,
   Building2,
-  Search,
-  Handshake,
   LandPlot,
-  Map,
 } from "lucide-react";
 import { useEffect } from "react";
 import arrow from "@/assets/images/icons/arrow.svg"
