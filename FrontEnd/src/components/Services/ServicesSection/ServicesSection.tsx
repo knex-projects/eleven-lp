@@ -12,9 +12,6 @@ import {
 
 import service1Background from "@/assets/images/backgrounds/services/1.jpg";
 import service3Background from "@/assets/images/backgrounds/services/3.jpg";
-import service4Background from "@/assets/images/backgrounds/services/4.jpg";
-import service5Background from "@/assets/images/backgrounds/services/5.jpg";
-import service6Background from "@/assets/images/backgrounds/services/6.jpg";
 import service7Background from "@/assets/images/backgrounds/services/7.jpg";
 import service8Background from "@/assets/images/backgrounds/services/8.jpg";
 
@@ -26,23 +23,8 @@ const servicesData = [
   },
   {
     src: service3Background,
-    title: "Internacionalização e mapeamento",
-    href: "/Solucoes#internacionalizacao-e-mapeamento",
-  },
-  {
-    src: service4Background,
-    title: "Estudo de concorrência",
-    href: "/Solucoes#estudo-de-concorrencia",
-  },
-  {
-    src: service5Background,
-    title: "Estudo de fornecedores",
-    href: "/Solucoes#estudo-de-fornecedores",
-  },
-  {
-    src: service6Background,
-    title: "Mapeamento de feiras",
-    href: "/Solucoes#mapeamento-de-feiras",
+    title: "Internacionalização de Ambientes.",
+    href: "/Solucoes#internacionalizacao-de-ambientes",
   },
   { src: service7Background, title: "Traduções", href: "/Solucoes#Traducao" },
   {
