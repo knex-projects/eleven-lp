@@ -15,7 +15,7 @@ export default function OurSolutionsSection() {
           </h1>
           <div className="max-lg:hidden max-lg:absolute min-w-[80vw]"></div>
           <h2 className="text-[24px] font-normal  max-w-[481px] pt-10 text-subtext w-[88vw] max-lg:text-[20px]  max-sm:text-[16px]  max-sm:max-w-[275px] max-sm:pt-5">
-            Da ideia à execução:  transformamos desafios em oportunidades globais. oferecemos serviços para impulsionar  sua presença nacional e internacional
+            Da ideia à execução:  transformamos desafios em oportunidades globais. Oferecemos serviços para impulsionar  sua presença nacional e internacional.
           </h2>
         </div>
         <div className="mt-[20px] h-[300px] flex justify-center relative">

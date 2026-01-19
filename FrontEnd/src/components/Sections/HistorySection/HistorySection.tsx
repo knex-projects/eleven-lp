@@ -19,7 +19,7 @@ export default function HistorySection() {
             Somos uma Empresa Júnior (EJ) vinculada ao Movimento Empresa Júnior,
             que surgiu da aspiração dos alunos de Relações Internacionais da
             UEPB em colocar em prática a teoria aprendida no curso e oferecer
-            projetos de excelência, Atuando desde 2017, com o objetivo de
+            projetos de excelência. Atuamos desde 2017 com o objetivo de
             inserir pequenas e médias empresas no mercado internacional.
           </h2>
         </div>

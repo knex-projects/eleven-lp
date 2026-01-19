@@ -9,7 +9,7 @@ const casesData = [
     {
         title: 'Originarium',
         description:
-            'Realizamos sua Análise de Viabilidade Internacional (AVI), mapeando mercados e investigando todas as exigências legais e regulatórias para seus produtos. Entregando um roadmap com o mercado-alvo prioritário.',
+            'Realizamos sua Análise de Viabilidade Internacional (AVI), mapeando mercados e investigando todas as exigências legais e regulatórias para seus produtos, entregando um roadmap com o mercado-alvo prioritário.',
         image: LogoCase1,
         link: '#',
     },

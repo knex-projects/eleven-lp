@@ -15,7 +15,7 @@ export default function MissionSection() {
           transformar desafios em oportunidades. Acreditamos que a
           internacionalização não é exclusiva de grandes corporações, mas um
           caminho viável para PMEs que desejam escalar impactos, aumentar
-          receitas e construir resiliência
+          receitas e construir resiliência.
         </p>
       </div>
       <img src={rocketIcon} className="w-[530px] max-md:mt-10 max-xl:size-[284px]" />
